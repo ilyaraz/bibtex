@@ -1,32 +1,48 @@
 % Encoding: UTF-8
 
+@String{ACMCS        = {{ACM} Computing Surveys}}
+@String{ALGORITHMICA = {Algorithmica}}
+
 @String{CACM       = {Communications of the {ACM}}}
 @String{COLT2013   = {Proceedings of the 26th Annual Conference on Learning Theory ({COLT}~'2013)}}
+@String{COMPNET      = {Computer Networks and {ISDN} Systems}}
 @String{CRYPTO2015 = {Proceedings of the 35th International Cryptology Conference ({CRYPTO}~'2015)}}
+@String{CVPR2008     = {Proceedings of {IEEE} Computer Society Conference on Computer Vision and Pattern Recognition ({CVPR}~'2008)}}
 @String{ESA2016    = {Proceedings of the 24th European Symposium Of Algorithms ({ESA}~'2016)}}
 @String{FOCS2006   = {Proceedings of the 47th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2006)}}
+@String{FOCS2014     = {Proceedings of the 55th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2014)}}
 
 @String{ICALP2013 = {Proceedings of the 40th International Colloquium on Automata, Languages and Programming ({ICALP}~'2013)}}
+@String{ICCV2011     = {Proceedings of the 13th International Conference on Computer Vision ({ICCV}~'2011)}}
 @String{ICML2010   = {Proceedings of the 27th International Conference on Machine Learning ({ICML}~'2010)}}
+@String{IJAR         = {International Journal of Approximate Reasoning}}
 @String{INFCOMP    = {Information and Computation}}
 @String{JCSS       = {Journal of Computer and System Sciences}}
-@String{NIPS2011   = {Proceedings of the 25th Annual Conference on Neural Information Processing Systems ({NIPS}~'2011)}}
-@String{NIPS2015  = {Proceedings of the 29th Annual Conference on Neural Information Processing Systems ({NIPS}~'2015)}}
+@String{NIPS2008     = {Proceedings of Advances in Neural Information Processing Systems~21 ({NIPS}~'2008)}}
+@String{NIPS2011     = {Proceedings of Advances in Neural Information Processing Systems~24 ({NIPS}~'2011)}}
+@String{NIPS2015     = {Proceedings of Advances in Neural Information Processing Systems~28 ({NIPS}~'2015)}}
 @String{PODS2015   = {Proceedings of the 34th {ACM} Symposium on Principles of Database Systems ({PODS}~'2015)}}
 @String{PODS2016   = {Proceedings of the 35th {ACM} Symposium on Principles of Database Systems ({PODS}~'2016)}}
+@String{SEQUENCES97  = {Proceedings of the Compression and Complexity of Sequences ({SEQUENCES}~'1997)}}
 @String{SICOMP     = {{SIAM} Journal on Computing}}
 @String{SIDM       = {{SIAM} Journal on Discrete Mathematics}}
 @String{SOCG2004   = {Proceedings of the 20th {ACM} Symposium on Computational Geometry ({SoCG}~'2004)}}
 @String{SOCG2015 = {Proceedings of the 31st International Symposium on Computational Geometry ({SoCG}~'2015)}}
 @String{SOCG2016  = {Proceedings of the 32nd International Symposium on Computational Geometry ({SoCG}~'2016)}}
+@String{SODA2004     = {Proceedings of the 15th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2004)}}
 @String{SODA2006   = {Proceedings of the 17th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2006)}}
 @String{SODA2014   = {Proceedings of the 25th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2014)}}
 @String{SODA2016   = {Proceedings of the 27th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2016)}}
 @String{STOC1998   = {Proceedings of the 30th {ACM} Symposium on the Theory of Computing ({STOC}~'1998)}}
 @String{STOC2002   = {Proceedings of the 34th {ACM} Symposium on the Theory of Computing ({STOC}~'2002)}}
+@String{STOC2008     = {Proceedings of the 40th {ACM} Symposium on the Theory of Computing ({STOC}~'2008)}}
 @String{STOC2015   = {Proceedings of the 47th {ACM} Symposium on the Theory of Computing ({STOC}~'2015)}}
+@String{TALG         = {{ACM} Transactions on Algorithms}}
 @String{TOC        = {Theory of Computing}}
 @String{TOCT       = {{ACM} Transactions on Computation Theory}}
+@String{TPAMI        = {{IEEE} Transactions on Pattern Analysis and Machine Intelligence}}
+@String{UAI2009      = {Proceedings of the 25th Conference on Uncertainty in Artificial Intelligence ({UAI}~'2009)}}
+@String{VISAPP2009   = {Proceedings of the 4th International Conference on Computer Vision Theory and Applications ({VISAPP}~`2009)}}
 @String{VLDB1999   = {Proceedings of the 25th International Conference on Very Large Data Bases ({VLDB}~'1999)}}
 @String{WADS2007   = {Proceedings of the 10th International Workshop on Algorithms and Data Structures ({WADS}~'2007)}}
 @String{WWW2005    = {Proceedings of the 14th international conference on World Wide Web ({WWW}~'2005)}}
@@ -99,6 +115,7 @@
   title     = {Tight Lower Bounds for Data-Dependent Locality-Sensitive Hashing},
   booktitle = SOCG2016,
   year      = {2016},
+  pages     = {9:1--9:11},
   note      = {Available as arXiv:1507.04299},
 }
 
@@ -451,6 +468,161 @@
   title  = {{ANNOY}: Approximate Nearest Neighbors in {C}++/{P}ython optimized for memory usage and loading/saving to disk},
   year   = {2013},
   note   = {Available as \texttt{https://github.com/spotify/annoy}},
+}
+
+@InProceedings{B97,
+  author    = {Andrei Z. Broder},
+  title     = {On the Resemblance and Containment of Documents},
+  booktitle = SEQUENCES97,
+  year      = {1997},
+  pages     = {21--29},
+}
+
+@Article{BGMZ97,
+  author  = {Andrei Z. Broder and Steven C. Glassman and Mark S. Manasse and Geoffrey Zweig},
+  title   = {Syntactic clustering of the Web},
+  journal = COMPNET,
+  year    = {1997},
+  volume  = {29},
+  number  = {8--13},
+  pages   = {1157--1166},
+}
+
+@Article{SH09,
+  author  = {Ruslan Salakhutdinov and Geoffrey Hinton},
+  title   = {Semantic Hashing},
+  journal = IJAR,
+  year    = {2009},
+  volume  = {50},
+  number  = {7},
+  pages   = {969--978},
+}
+
+@InProceedings{WTF08,
+  author    = {Yair Weiss and Antonio Torralba and Rob Fergus},
+  title     = {Spectral Hashing},
+  booktitle = NIPS2008,
+  year      = {2008},
+  pages     = {1753--1760},
+}
+
+@InProceedings{YSRL11,
+  author    = {Jay Yagnik and Dennis Strelow and David Ross and Ruei-Sung Lin},
+  title     = {The Power of Comparative Reasoning},
+  booktitle = ICCV2011,
+  year      = {2011},
+}
+
+@Article{S91,
+  author  = {Robert F. Sproull},
+  title   = {Refinements to nearest-neighbor searching in $k$-dimensional trees},
+  journal = ALGORITHMICA,
+  year    = {1991},
+  volume  = {6},
+  number  = {1--6},
+  pages   = {579--589},
+}
+
+@InProceedings{VKS09,
+  author    = {Nakul Verma and Samory Kpotufe and Sanjoy},
+  title     = {Which Spatial Partition Trees are Adaptive to Intrinsic Dimension?},
+  booktitle = UAI2009,
+  year      = {2009},
+}
+
+@InProceedings{SH08,
+  author    = {Chanop Silpa{-}Anan and Richard Hartley},
+  title     = {Optimised {KD}-trees for fast image descriptor matching},
+  booktitle = CVPR2008,
+  year      = {2008},
+  pages     = {1--8},
+}
+
+@InProceedings{ML09,
+  author    = {Marius Muja and David G. Lowe},
+  title     = {Fast Approximate Nearest Neighbors with Automatic Algorithm Configuration},
+  booktitle = VISAPP2009,
+  year      = {2009},
+  pages     = {331--340},
+}
+
+@Article{M01,
+  author  = {James McNames},
+  title   = {A fast nearest-neighbor algorithm based on a principal axis search tree},
+  journal = TPAMI,
+  year    = {2001},
+  volume  = {23},
+  number  = {9},
+  pages   = {964--976},
+}
+
+@InProceedings{KR02,
+  author    = {David R. Karger and Matthias Ruhl},
+  title     = {Finding nearest neighbors in growth-restricted metrics},
+  booktitle = STOC2002,
+  year      = {2002},
+  pages     = {741--750},
+}
+
+@InProceedings{BKL06,
+  author    = {Alina Beygelzimer and Sham Kakade and John Langford},
+  title     = {Cover trees for nearest neighbor},
+  booktitle = ICML2006,
+  year      = {2006},
+  pages     = {97--104},
+}
+
+@InProceedings{KL04,
+  author    = {Robert Krauthgamer and James R. Lee},
+  title     = {Navigating nets: simple algorithms for proximity search},
+  booktitle = SODA2004,
+  year      = {2004},
+  pages     = {798--807},
+}
+
+@InProceedings{AAKK14,
+  author    = {Amirali Abdullah and Alexandr Andoni and Ravindran Kannan and Robert Krauthgamer},
+  title     = {Spectral Approaches to Nearest Neighbor Search},
+  booktitle = FOCS2014,
+  year      = {2014},
+  pages     = {581--590},
+}
+
+@Article{IN07,
+  author  = {Piotr Indyk and Assaf Naor},
+  title   = {Nearest-neighbor-preserving embeddings},
+  journal = TALG,
+  year    = {2007},
+  volume  = {3},
+  number  = {3},
+}
+
+@InCollection{C06,
+  author    = {Kenneth L. Clarkson},
+  title     = {Nearest-Neighbor Searching and Metric Space Dimensions},
+  booktitle = {Nearest-Neighbor Methods in Learning and Vision: Theory and Practice},
+  publisher = {MIT Press},
+  year      = {2006},
+  editor    = {Gregory Shakhnarovich and Trevor Darrell and Piotr Indyk},
+  pages     = {15--59},
+}
+
+@InProceedings{DF08,
+  author    = {Sanjoy Dasgupta and Yoav Freund},
+  title     = {Random projection trees and low dimensional manifolds},
+  booktitle = STOC2008,
+  year      = {2008},
+  pages     = {537--546},
+}
+
+@Article{CNBM01,
+  author  = {Edgar Ch{\'{a}}vez and Gonzalo Navarro and Ricardo A. Baeza{-}Yates and Jos{\'{e}} L. Marroqu{\'{\i}}n},
+  title   = {Searching in metric spaces},
+  journal = ACMCS,
+  year    = {2001},
+  volume  = {33},
+  number  = {3},
+  pages   = {273--321},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
