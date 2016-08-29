@@ -5,6 +5,7 @@
 
 @String{CACM       = {Communications of the {ACM}}}
 @String{COLT2013   = {Proceedings of the 26th Annual Conference on Learning Theory ({COLT}~'2013)}}
+@String{COMBINATORICA = {Combinatorica}}
 @String{COMPNET       = {Computer Networks and {ISDN} Systems}}
 @String{CRYPTO2015 = {Proceedings of the 35th International Cryptology Conference ({CRYPTO}~'2015)}}
 @String{CVPR2008      = {Proceedings of {IEEE} Computer Society Conference on Computer Vision and Pattern Recognition ({CVPR}~'2008)}}
@@ -15,11 +16,15 @@
 @String{FOCS2008      = {Proceedings of the 49th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2008)}}
 @String{FOCS2010      = {Proceedings of the 51st Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2010)}}
 @String{FOCS2014      = {Proceedings of the 55th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2014)}}
+@String{FOCS2016      = {Proceedings of the 57th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2016)}}
 @String{ICALP2012     = {Proceedings of the 39th International Colloquium on Automata, Languages and Programming ({ICALP}~'2012)}}
 
 @String{ICALP2013 = {Proceedings of the 40th International Colloquium on Automata, Languages and Programming ({ICALP}~'2013)}}
 @String{ICCV2011      = {Proceedings of the 13th International Conference on Computer Vision ({ICCV}~'2011)}}
+@String{ICML2006      = {Proceedings of the 23rd International Conference on Machine Learning ({ICML}~'2006)}}
+@String{ICML2009      = {Proceedings of the 26th International Conference on Machine Learning ({ICML}~'2009)}}
 @String{ICML2010   = {Proceedings of the 27th International Conference on Machine Learning ({ICML}~'2010)}}
+@String{IEEEP         = {Proceedings of the {IEEE}}}
 @String{IJAR          = {International Journal of Approximate Reasoning}}
 @String{INFCOMP    = {Information and Computation}}
 @String{IPL           = {Information Processing Letters}}
@@ -48,6 +53,7 @@
 @String{STOC2008      = {Proceedings of the 40th {ACM} Symposium on the Theory of Computing ({STOC}~'2008)}}
 @String{STOC2015   = {Proceedings of the 47th {ACM} Symposium on the Theory of Computing ({STOC}~'2015)}}
 @String{TALG          = {{ACM} Transactions on Algorithms}}
+@String{TCS           = {Theoretical Computer Science}}
 @String{TOC        = {Theory of Computing}}
 @String{TOCT       = {{ACM} Transactions on Computation Theory}}
 @String{TPAMI         = {{IEEE} Transactions on Pattern Analysis and Machine Intelligence}}
@@ -846,7 +852,7 @@
 
 @Article{AR14,
   author  = {Nir Ailon and Holger Rauhut},
-  title   = {Fast and RIP-Optimal Transforms},
+  title   = {Fast and {RIP}-Optimal Transforms},
   journal = DCG,
   year    = {2014},
   volume  = {52},
@@ -856,7 +862,7 @@
 
 @Unpublished{CFGMSA16,
   author = {Krzysztof Choromanski and Francois Fagan and Cedric Gouy{-}Paille and Anne Morvan and Tamas Sarlos and Jamal Atif},
-  title  = {TripleSpin -- a generic compact paradigm for fast machine learning computations},
+  title  = {{TripleSpin} -- a generic compact paradigm for fast machine learning computations},
   note   = {Available as arXiv:1605.0904},
   year   = {2016},
 }
@@ -866,6 +872,86 @@
   title  = {Fast Cross-Polytope Locality-Sensitive Hashing},
   note   = {Available as arXiv:1602.06922},
   year   = {2016},
+}
+
+@Article{FKS84,
+  author  = {Michael L. Fredman and J\'{a}nos Koml\'{o}s and Endre Szemer\'{e}di},
+  title   = {Storing a Sparse Table with {$O(1)$} Worst Case Access Time},
+  journal = JACM,
+  year    = {1984},
+  volume  = {31},
+  number  = {3},
+  pages   = {538--544},
+}
+
+@Article{OL81,
+  author  = {Mark H. Overmars and Jan van Leeuwen},
+  title   = {Some principles for dynamizing decomposable searching problems},
+  journal = IPL,
+  year    = {1981},
+  volume  = {12},
+  number  = {1},
+  pages   = {49--53},
+}
+
+@Article{LLR95,
+  author  = {Nathan Linial and Eran London and Yuri Rabinovich},
+  title   = {The geometry of graphs and some of its algorithmic applications},
+  journal = COMBINATORICA,
+  year    = {1995},
+  volume  = {15},
+  number  = {2},
+  pages   = {215--245},
+}
+
+@InProceedings{WDLSA09,
+  author    = {Kilian Weinberger and Anirban Dasgupta and John Langford and Alex Smola and Josh Attenberg},
+  title     = {Feature Hashing for Large Scale Multitask Learning},
+  booktitle = ICML2009,
+  year      = {2009},
+  pages     = {1113--1120},
+}
+
+@Article{CCF04,
+  author  = {Moses Charikar and Kevin Chen and Martin Farach{-}Colton},
+  title   = {Finding Frequent Items in Data Streams},
+  journal = TCS,
+  year    = {2004},
+  volume  = {312},
+  number  = {1},
+  pages   = {3--15},
+}
+
+@Misc{RS15,
+  author       = {Ilya Razenshteyn and Ludwig Schmidt},
+  title        = {{FALCONN}: Similarity Search over High-Dimensional Data},
+  howpublished = {Available as \texttt{https://falconn-lib.org/}},
+  year         = {2015},
+}
+
+@Misc{RS15a,
+  author       = {Ilya Razenshteyn and Ludwig Schmidt},
+  title        = {{FFHT}: a {C}99 implementation of the {F}ast {H}adamard {T}ransform},
+  howpublished = {Available as \texttt{https://github.com/FALCONN-LIB/FFHT}},
+  year         = {2015},
+}
+
+@Article{MJ05,
+  author  = {Matteo Frigo and Steven G. Johnson},
+  title   = {The Design and Implementation of {FFTW3}},
+  journal = IEEEP,
+  year    = {2005},
+  volume  = {93},
+  number  = {2},
+  pages   = {216--231},
+}
+
+@InProceedings{ACW16,
+  author    = {Josh Alman and Timothy M. Chan and Ryan Williams},
+  title     = {Polynomial Representations of Threshold Functions with Applications},
+  booktitle = FOCS2016,
+  year      = {2016},
+  note      = {To appear},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
