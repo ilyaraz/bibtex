@@ -1,957 +1,1165 @@
 % Encoding: UTF-8
 
-@String{ACMCS         = {{ACM} Computing Surveys}}
-@String{ALGORITHMICA  = {Algorithmica}}
 
-@String{CACM       = {Communications of the {ACM}}}
-@String{COLT2013   = {Proceedings of the 26th Annual Conference on Learning Theory ({COLT}~'2013)}}
-@String{COMBINATORICA = {Combinatorica}}
-@String{COMPNET       = {Computer Networks and {ISDN} Systems}}
-@String{CRYPTO2015 = {Proceedings of the 35th International Cryptology Conference ({CRYPTO}~'2015)}}
-@String{CVPR2008      = {Proceedings of {IEEE} Computer Society Conference on Computer Vision and Pattern Recognition ({CVPR}~'2008)}}
-@String{DCG           = {Discrete and Computational Geometry}}
-@String{ESA2016    = {Proceedings of the 24th European Symposium Of Algorithms ({ESA}~'2016)}}
-@String{EUROCRYPT2015 = {Proceedings 34th Annual International Conference on the Theory and Applications of Cryptographic Techniques ({EUROCRYPT}~'2015)}}
-@String{FOCS2006   = {Proceedings of the 47th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2006)}}
-@String{FOCS2008      = {Proceedings of the 49th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2008)}}
-@String{FOCS2010      = {Proceedings of the 51st Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2010)}}
-@String{FOCS2014      = {Proceedings of the 55th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2014)}}
-@String{FOCS2016      = {Proceedings of the 57th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2016)}}
-@String{ICALP2012     = {Proceedings of the 39th International Colloquium on Automata, Languages and Programming ({ICALP}~'2012)}}
-
-@String{ICALP2013 = {Proceedings of the 40th International Colloquium on Automata, Languages and Programming ({ICALP}~'2013)}}
-@String{ICCV2011      = {Proceedings of the 13th International Conference on Computer Vision ({ICCV}~'2011)}}
-@String{ICML2006      = {Proceedings of the 23rd International Conference on Machine Learning ({ICML}~'2006)}}
-@String{ICML2009      = {Proceedings of the 26th International Conference on Machine Learning ({ICML}~'2009)}}
-@String{ICML2010   = {Proceedings of the 27th International Conference on Machine Learning ({ICML}~'2010)}}
-@String{IEEEP         = {Proceedings of the {IEEE}}}
-@String{IJAR          = {International Journal of Approximate Reasoning}}
-@String{INFCOMP    = {Information and Computation}}
-@String{IPL           = {Information Processing Letters}}
-@String{JCSS       = {Journal of Computer and System Sciences}}
-@String{JMLR          = {Journal of Machine Learning Research}}
-@String{NIPS2008      = {Proceedings of Advances in Neural Information Processing Systems~21 ({NIPS}~'2008)}}
-@String{NIPS2011      = {Proceedings of Advances in Neural Information Processing Systems~24 ({NIPS}~'2011)}}
-@String{NIPS2015      = {Proceedings of Advances in Neural Information Processing Systems~28 ({NIPS}~'2015)}}
-@String{PODS2015   = {Proceedings of the 34th {ACM} Symposium on Principles of Database Systems ({PODS}~'2015)}}
-@String{PODS2016   = {Proceedings of the 35th {ACM} Symposium on Principles of Database Systems ({PODS}~'2016)}}
-@String{SEQUENCES97   = {Proceedings of the Compression and Complexity of Sequences ({SEQUENCES}~'1997)}}
-@String{SICOMP     = {{SIAM} Journal on Computing}}
-@String{SIDM       = {{SIAM} Journal on Discrete Mathematics}}
-@String{SOCG2004   = {Proceedings of the 20th {ACM} Symposium on Computational Geometry ({SoCG}~'2004)}}
-@String{SOCG2015 = {Proceedings of the 31st International Symposium on Computational Geometry ({SoCG}~'2015)}}
-@String{SOCG2016  = {Proceedings of the 32nd International Symposium on Computational Geometry ({SoCG}~'2016)}}
-@String{SODA2004      = {Proceedings of the 15th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2004)}}
-@String{SODA2006   = {Proceedings of the 17th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2006)}}
-@String{SODA2014   = {Proceedings of the 25th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2014)}}
-@String{SODA2016   = {Proceedings of the 27th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2016)}}
-@String{SPAA2016      = {Proceedings of the 28th {ACM} Symposium on Parallelism in Algorithms and Architectures ({SPAA}~'2016)}}
-@String{STOC1995      = {Proceedings of the 27th {ACM} Symposium on the Theory of Computing ({STOC}~'1995)}}
-@String{STOC1998   = {Proceedings of the 30th {ACM} Symposium on the Theory of Computing ({STOC}~'1998)}}
-@String{STOC1999      = {Proceedings of the 31st {ACM} Symposium on the Theory of Computing ({STOC}~'1999)}}
-@String{STOC2002   = {Proceedings of the 34th {ACM} Symposium on the Theory of Computing ({STOC}~'2002)}}
-@String{STOC2008      = {Proceedings of the 40th {ACM} Symposium on the Theory of Computing ({STOC}~'2008)}}
-@String{STOC2015   = {Proceedings of the 47th {ACM} Symposium on the Theory of Computing ({STOC}~'2015)}}
-@String{TALG          = {{ACM} Transactions on Algorithms}}
-@String{TCS           = {Theoretical Computer Science}}
-@String{TOC        = {Theory of Computing}}
-@String{TOCT       = {{ACM} Transactions on Computation Theory}}
-@String{TPAMI         = {{IEEE} Transactions on Pattern Analysis and Machine Intelligence}}
-@String{UAI2009       = {Proceedings of the 25th Conference on Uncertainty in Artificial Intelligence ({UAI}~'2009)}}
-@String{VISAPP2009    = {Proceedings of the 4th International Conference on Computer Vision Theory and Applications ({VISAPP}~`2009)}}
-@String{VLDB1999   = {Proceedings of the 25th International Conference on Very Large Data Bases ({VLDB}~'1999)}}
-@String{VLDB2007      = {Proceedings of the 33rd International Conference on Very Large Data Bases ({VLDB}~'2007)}}
-@String{WADS2007   = {Proceedings of the 10th International Workshop on Algorithms and Data Structures ({WADS}~'2007)}}
-@String{WWW2005    = {Proceedings of the 14th international conference on World Wide Web ({WWW}~'2005)}}
-
-@InProceedings{AKR15,
-  author    = {Alexandr Andoni and Robert Krauthgamer and Ilya Razenshteyn},
-  title     = {Sketching and Embedding are Equivalent for Norms},
-  booktitle = STOC2015,
-  year      = {2015},
-  pages     = {479--488},
-  note      = {Available as arXiv:1411.2577},
-}
-
-@InProceedings{BIRW16,
-  author    = {Arturs Backurs and Piotr Indyk and Ilya Razenshteyn and David P. Woodruff},
-  title     = {Nearly-optimal bounds for sparse recovery in generic norms, with applications to $k$-median sketching},
-  booktitle = SODA2016,
-  year      = {2016},
-  pages     = {318--337},
-  note      = {Available as arXiv:1504.01076},
-}
-
-@InProceedings{AGR15,
-  author    = {Zeyuan {Allen-Zhu} and Rati Gelashvili and Ilya Razenshteyn},
-  title     = {Restricted Isometry Property for General p-Norms},
-  booktitle = SOCG2015,
-  year      = {2015},
-  pages     = {451--460},
-  note      = {Available as arXiv:1407.2178},
-}
-
-@InProceedings{AILRS15,
-  author    = {Alexandr Andoni and Piotr Indyk and Thijs Laarhoven and Ilya Razenshteyn and Ludwig Schmidt},
-  title     = {Practical and Optimal {LSH} for Angular Distance},
-  booktitle = NIPS2015,
-  year      = {2015},
-  pages     = {1225--1233},
-  note      = {Available as arXiv:1509.02897},
-}
-
-@InProceedings{AR15,
-  author    = {Alexandr Andoni and Ilya Razenshteyn},
-  title     = {Optimal Data-Dependent Hashing for Approximate Near Neighbors},
-  booktitle = STOC2015,
-  year      = {2015},
-  pages     = {793--801},
-  note      = {Available as arXiv:1501.01062},
-}
-
-@InProceedings{AINR14,
-  author    = {Alexandr Andoni and Piotr Indyk and Huy L. Nguyen and Ilya Razenshteyn},
-  title     = {Beyond Locality-Sensitive Hashing},
-  booktitle = SODA2014,
-  year      = {2014},
-  pages     = {1018--1028},
-  note      = {Available as arXiv:1306.1547},
-}
-
-@InProceedings{IR13,
-  author    = {Piotr Indyk and Ilya Razenshteyn},
-  title     = {On Model-Based {RIP-1} Matrices},
-  booktitle = ICALP2013,
-  year      = {2013},
-  pages     = {564--575},
-  note      = {Available as arXiv:1304.3604},
-}
-
-@InProceedings{AR16,
-  author    = {Alexandr Andoni and Ilya Razenshteyn},
-  title     = {Tight Lower Bounds for Data-Dependent Locality-Sensitive Hashing},
-  booktitle = SOCG2016,
-  year      = {2016},
-  pages     = {9:1--9:11},
-  note      = {Available as arXiv:1507.04299},
-}
-
-@Unpublished{ALRW16,
-  author = {Alexandr Andoni and Thijs Laarhoven and Ilya Razenshteyn and Erik Waingarten},
-  title  = {Lower Bounds on Time--Space Trade-Offs for Approximate Near Neighbors},
-  note   = {Available as arXiv:1605.02701},
-  year   = {2016},
-}
-
-@InProceedings{APRS16,
-  author    = {Thomas D. Ahle and Rasmus Pagh and Ilya Razenshteyn and Francesco Silvestri},
-  title     = {On the Complexity of Inner Product Similarity Join},
-  booktitle = PODS2016,
-  year      = {2016},
-  pages     = {151--164},
-  note      = {Available as arXiv:1510.02824},
-}
-
-@Book{SDI06,
-  title     = {Nearest-Neighbor Methods in Learning and Vision: Theory and Practice},
-  publisher = {MIT Press},
-  year      = {2006},
-  author    = {Gregory Shakhnarovich and Trevor Darrell and Piotr Indyk},
-}
-
-@InProceedings{L15,
-  author    = {Thijs Laarhoven},
-  title     = {Sieving for Shortest Vectors in Lattices Using Angular Locality-Sensitive Hashing},
-  booktitle = CRYPTO2015,
-  year      = {2015},
-  pages     = {3--22},
-}
-
-@InProceedings{DRT11,
-  author    = {Inderjit S. Dhillon and Pradeep Ravikumar and Ambuj Tewari},
-  title     = {Nearest Neighbor based Greedy Coordinate Descent},
-  booktitle = NIPS2011,
-  year      = {2011},
-  pages     = {2160--2168},
-}
-
-@InProceedings{HLLM15,
-  author    = {Thomas Hofmann and Aur{\'{e}}lien Lucchi and Simon Lacoste{-}Julien and Brian McWilliams},
-  title     = {Variance Reduced Stochastic Gradient Descent with Neighbors},
-  booktitle = NIPS2015,
-  year      = {2015},
-  pages     = {2305--2313},
-}
-
-@Unpublished{AYS16,
-  author = {Zeyuan {Allen-Zhu} and Yang Yuan and Karthik Sridharan},
-  title  = {Exploiting the Structure: Stochastic Gradient Methods Using Raw Clusters},
-  note   = {Available as arXiv:1602.02151},
-  year   = {2016},
-}
-
-@Article{C88,
-  author  = {Kenneth L. Clarkson},
-  title   = {A Randomized Algorithm for Closest-Point Queries},
-  journal = SICOMP,
-  year    = {1988},
-  volume  = {17},
-  number  = {4},
-  pages   = {830--847},
-}
-
-@Article{M93,
-  author  = {Stefan Meiser},
-  title   = {Point Location in Arrangements of Hyperplanes},
-  journal = INFCOMP,
-  year    = {1993},
-  volume  = {106},
-  number  = {2},
-  pages   = {286--303},
-}
-
-@Article{KOR00,
-  author  = {Eyal Kushilevitz and Rafail Ostrovsky and Yuval Rabani},
-  title   = {Efficient Search for Approximate Nearest Neighbor in High Dimensional Spaces},
-  journal = SICOMP,
-  year    = {2000},
-  volume  = {30},
-  number  = {2},
-  pages   = {457--474},
-}
-
-@InProceedings{IM98,
-  author    = {Piotr Indyk and Rajeev Motwani},
-  title     = {Approximate Nearest Neighbors: Towards Removing the Curse of Dimensionality},
-  booktitle = STOC1998,
-  year      = {1998},
-  pages     = {604--613},
-}
-
-@Article{I01,
-  author  = {Piotr Indyk},
-  title   = {On Approximate Nearest Neighbors under $\ell_{\infty}$ Norm},
-  journal = JCSS,
-  year    = {2001},
-  volume  = {63},
-  number  = {4},
-  pages   = {627--638},
-}
-
-@PhdThesis{I01a,
-  author = {Piotr Indyk},
-  title  = {High-Dimensional Computational Geometry},
-  school = {Stanford University},
-  year   = {2001},
-}
-
-@InProceedings{GIM99,
-  author    = {Aristides Gionis and Piotr Indyk and Rajeev Motwani},
-  title     = {Similarity Search in High Dimensions via Hashing},
-  booktitle = VLDB1999,
-  year      = {1999},
-  pages     = {518--529},
-}
-
-@InProceedings{C02,
-  author    = {Moses Charikar},
-  title     = {Similarity estimation techniques from rounding algorithms},
-  booktitle = STOC2002,
-  year      = {2002},
-  pages     = {380--388},
-}
-
-@InProceedings{DIIM04,
-  author    = {Mayur Datar and Nicole Immorlica and Piotr Indyk and Vahab S. Mirrokni},
-  title     = {Locality-sensitive hashing scheme based on p-stable distributions},
-  booktitle = SOCG2004,
-  year      = {2004},
-  pages     = {253--262},
-}
-
-@Article{CR10,
-  author  = {Amit Chakrabarti and Oded Regev},
-  title   = {An Optimal Randomized Cell Probe Lower Bound for Approximate Nearest Neighbor Searching},
-  journal = SICOMP,
-  year    = {2010},
-  volume  = {39},
-  number  = {5},
-  pages   = {1919--1940},
-}
-
-@InProceedings{P06,
-  author    = {Rina Panigrahy},
-  title     = {Entropy based nearest neighbor search in high dimensions},
-  booktitle = SODA2006,
-  year      = {2006},
-  pages     = {1186--1195},
-}
-
-@Article{AC09,
-  author  = {Nir Ailon and Bernard Chazelle},
-  title   = {The Fast {J}ohnson--{L}indenstrauss Transform and Approximate Nearest Neighbors},
-  journal = SICOMP,
-  year    = {2009},
-  volume  = {39},
-  number  = {1},
-  pages   = {302--322},
-}
-
-@InProceedings{AI06,
-  author    = {Alexandr Andoni and Piotr Indyk},
-  title     = {Near-Optimal Hashing Algorithms for Approximate Nearest Neighbor in High Dimensions},
-  booktitle = FOCS2006,
-  year      = {2006},
-  pages     = {459--468},
-}
-
-@InProceedings{TT07,
-  author    = {Kengo Terasawa and Yuzuru Tanaka},
-  title     = {Spherical {LSH} for Approximate Nearest Neighbor Search on Unit Hypersphere},
-  booktitle = WADS2007,
-  year      = {2007},
-  pages     = {27--38},
-}
-
-@InProceedings{P16,
-  author    = {Rasmus Pagh},
-  title     = {Locality-sensitive Hashing without False Negatives},
-  booktitle = SODA2016,
-  year      = {2016},
-  pages     = {1--9},
-}
-
-@InProceedings{K15,
-  author    = {Michael Kapralov},
-  title     = {Smooth Tradeoffs between Insert and Query Complexity in Nearest Neighbor Search},
-  booktitle = PODS2015,
-  year      = {2015},
-  pages     = {329--342},
-}
-
-@InProceedings{BDGL16,
-  author    = {Anja Becker and L{\'{e}}o Ducas and Nicolas Gama and Thijs Laarhoven},
-  title     = {New directions in nearest neighbor searching with applications to lattice sieving},
-  booktitle = SODA2016,
-  year      = {2016},
-  pages     = {10--24},
-}
-
-@Unpublished{L15a,
-  author = {Thijs Laarhoven},
-  title  = {Tradeoffs for nearest neighbors on the sphere},
-  note   = {Available as arXiv:1511.07527},
-  year   = {2015},
-}
-
-@Article{HIM12,
-  author  = {Sariel Har{-}Peled and Piotr Indyk and Rajeev Motwani},
-  title   = {Approximate Nearest Neighbor: Towards Removing the Curse of Dimensionality},
-  journal = TOC,
-  year    = {2012},
-  volume  = {8},
-  number  = {1},
-  pages   = {321--350},
-}
-
-@Article{AI08,
-  author  = {Alexandr Andoni and Piotr Indyk},
-  title   = {Near-optimal hashing algorithms for approximate nearest neighbor in high dimensions},
-  journal = CACM,
-  year    = {2008},
-  volume  = {51},
-  number  = {1},
-  pages   = {117--122},
-}
-
-@PhdThesis{A09,
-  author = {Alexandr Andoni},
-  title  = {Nearest Neighbor Search: the Old, the New, and the Impossible},
-  school = {MIT},
-  year   = {2009},
-}
-
-@Unpublished{WSSJ14,
-  author = {Jingdong Wang and Heng Tao Shen and Kingkuan Song and Jianqiu Ji},
-  title  = {Hashing for Similarity Search: a Survey},
-  note   = {Available as arXiv:1408.2927},
-  year   = {2014},
-}
-
-@Unpublished{WLKC15,
-  author = {Jun Wang and Wei Liu and Sanjiv Kumar and Shih-Fu Chang},
-  title  = {Learning to Hash for Indexing Big Data - A Survey},
-  note   = {Available as arXiv:1509.05472},
-  year   = {2015},
-}
-
-@InProceedings{DS13,
-  author    = {Sanjoy Dasgupta and Kaushik Sinha},
-  title     = {Randomized partition trees for exact nearest neighbor search},
-  booktitle = COLT2013,
-  year      = {2013},
-  pages     = {317--337},
-}
-
-@Article{MNP07,
-  author  = {Rajeev Motwani and Assaf Naor and Rina Panigrahy},
-  title   = {Lower Bounds on Locality Sensitive Hashing},
-  journal = SIDM,
-  year    = {2007},
-  volume  = {21},
-  number  = {4},
-  pages   = {930--935},
-}
-
-@Article{OWZ14,
-  author  = {Ryan O'Donnell and Yi Wu and Yuan Zhou},
-  title   = {Optimal Lower Bounds for Locality-Sensitive Hashing (Except When $q$ is Tiny)},
-  journal = TOCT,
-  year    = {2014},
-  volume  = {6},
-  number  = {1},
-  pages   = {5},
-}
-
-@InProceedings{BCG05,
-  author    = {Mayank Bawa and Tyson Condie and Prasanna Ganesan},
-  title     = {{LSH} forest: self-tuning indexes for similarity search},
-  booktitle = WWW2005,
-  year      = {2005},
-  pages     = {651--660},
-}
-
-@PhdThesis{L15b,
-  author = {Thijs Laarhoven},
-  title  = {Search problems in cryptography: From fingerprinting to lattice sieving},
-  school = {Eindhoven University of Technology},
-  year   = {2015},
-}
-
-@InProceedings{KKKO16,
-  author    = {Karppa, Matti and Kaski, Petteri and Kohonen, Jukka and {{\'O} Cath{\'a}in}, Padraig},
-  title     = {Explicit correlation amplifiers for finding outlier correlations in deterministic subquadratic time},
-  booktitle = ESA2016,
-  year      = {2016},
-  note      = {To appear},
-}
-
-@InProceedings{KKK16,
-  author    = {Matti Karppa and Petteri Kaski and Jukka Kohonen},
-  title     = {A Faster Subquadratic Algorithm for Finding Outlier Correlations},
-  booktitle = SODA2016,
-  year      = {2016},
-  pages     = {1288--1305},
-}
-
-@Article{V15,
-  author  = {Gregory Valiant},
-  title   = {Finding Correlations in Subquadratic Time, with Applications to Learning Parities and the Closest Pair Problem},
-  journal = JACM,
-  year    = {2015},
-  volume  = {62},
-  number  = {2},
-  pages   = {13},
-}
-
-@Book{NRC13,
-  title     = {Frontiers in Massive Data Analysis},
-  publisher = {The National Academies Press},
-  year      = {2013},
-  author    = {National Research Council},
-  address   = {Washington, DC},
-  isbn      = {978-0-309-28778-4},
-}
-
-@InProceedings{WKC10,
-  author    = {Jun Wang and Sanjiv Kumar and Shih{-}Fu Chang},
-  title     = {Sequential Projection Learning for Hashing with Compact Codes},
-  booktitle = ICML2010,
-  year      = {2010},
-  pages     = {1127--1134},
-}
-
-@Misc{B13,
-  author = {Erik Bernhardsson},
-  title  = {{ANNOY}: Approximate Nearest Neighbors in {C}++/{P}ython optimized for memory usage and loading/saving to disk},
-  year   = {2013},
-  note   = {Available as \texttt{https://github.com/spotify/annoy}},
-}
-
-@InProceedings{B97,
-  author    = {Andrei Z. Broder},
-  title     = {On the Resemblance and Containment of Documents},
-  booktitle = SEQUENCES97,
-  year      = {1997},
-  pages     = {21--29},
-}
-
-@Article{BGMZ97,
-  author  = {Andrei Z. Broder and Steven C. Glassman and Mark S. Manasse and Geoffrey Zweig},
-  title   = {Syntactic clustering of the Web},
-  journal = COMPNET,
-  year    = {1997},
-  volume  = {29},
-  number  = {8--13},
-  pages   = {1157--1166},
-}
-
-@Article{SH09,
-  author  = {Ruslan Salakhutdinov and Geoffrey Hinton},
-  title   = {Semantic Hashing},
-  journal = IJAR,
-  year    = {2009},
-  volume  = {50},
-  number  = {7},
-  pages   = {969--978},
-}
-
-@InProceedings{WTF08,
-  author    = {Yair Weiss and Antonio Torralba and Rob Fergus},
-  title     = {Spectral Hashing},
-  booktitle = NIPS2008,
-  year      = {2008},
-  pages     = {1753--1760},
-}
-
-@InProceedings{YSRL11,
-  author    = {Jay Yagnik and Dennis Strelow and David Ross and Ruei-Sung Lin},
-  title     = {The Power of Comparative Reasoning},
-  booktitle = ICCV2011,
-  year      = {2011},
-}
-
-@Article{S91,
-  author  = {Robert F. Sproull},
-  title   = {Refinements to nearest-neighbor searching in $k$-dimensional trees},
-  journal = ALGORITHMICA,
-  year    = {1991},
-  volume  = {6},
-  number  = {1--6},
-  pages   = {579--589},
-}
-
-@InProceedings{VKS09,
-  author    = {Nakul Verma and Samory Kpotufe and Sanjoy},
-  title     = {Which Spatial Partition Trees are Adaptive to Intrinsic Dimension?},
-  booktitle = UAI2009,
-  year      = {2009},
-}
-
-@InProceedings{SH08,
-  author    = {Chanop Silpa{-}Anan and Richard Hartley},
-  title     = {Optimised {KD}-trees for fast image descriptor matching},
-  booktitle = CVPR2008,
-  year      = {2008},
-  pages     = {1--8},
-}
-
-@InProceedings{ML09,
-  author    = {Marius Muja and David G. Lowe},
-  title     = {Fast Approximate Nearest Neighbors with Automatic Algorithm Configuration},
-  booktitle = VISAPP2009,
-  year      = {2009},
-  pages     = {331--340},
-}
-
-@Article{M01,
-  author  = {James McNames},
-  title   = {A fast nearest-neighbor algorithm based on a principal axis search tree},
-  journal = TPAMI,
-  year    = {2001},
-  volume  = {23},
-  number  = {9},
-  pages   = {964--976},
-}
-
-@InProceedings{KR02,
-  author    = {David R. Karger and Matthias Ruhl},
-  title     = {Finding nearest neighbors in growth-restricted metrics},
-  booktitle = STOC2002,
-  year      = {2002},
-  pages     = {741--750},
-}
-
-@InProceedings{BKL06,
-  author    = {Alina Beygelzimer and Sham Kakade and John Langford},
-  title     = {Cover trees for nearest neighbor},
-  booktitle = ICML2006,
-  year      = {2006},
-  pages     = {97--104},
-}
-
-@InProceedings{KL04,
-  author    = {Robert Krauthgamer and James R. Lee},
-  title     = {Navigating nets: simple algorithms for proximity search},
-  booktitle = SODA2004,
-  year      = {2004},
-  pages     = {798--807},
-}
+@String { ACMCS         = {{ACM} Computing Surveys} }
+@String { ALGORITHMICA  = {Algorithmica} }
+@String { CACM          = {Communications of the {ACM}} }
+@String { COLT2013      = {Proceedings of the 26th Annual Conference on Learning Theory ({COLT}~'2013)} }
+@String { COMBINATORICA = {Combinatorica} }
+@String { COMPNET       = {Computer Networks and {ISDN} Systems} }
+@String { CRYPTO2015    = {Proceedings of the 35th International Cryptology Conference ({CRYPTO}~'2015)} }
+@String { CVPR2008      = {Proceedings of {IEEE} Computer Society Conference on Computer Vision and Pattern Recognition ({CVPR}~'2008)} }
+@String { DCG           = {Discrete and Computational Geometry} }
+@String { EMNLP2014     = {Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing ({EMNLP}~'2014)} }
+@String { ESA2016       = {Proceedings of the 24th European Symposium Of Algorithms ({ESA}~'2016)} }
+@String { EUROCRYPT2015 = {Proceedings 34th Annual International Conference on the Theory and Applications of Cryptographic Techniques ({EUROCRYPT}~'2015)} }
+@String { FOCS2006      = {Proceedings of the 47th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2006)} }
+@String { FOCS2008      = {Proceedings of the 49th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2008)} }
+@String { FOCS2010      = {Proceedings of the 51st Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2010)} }
+@String { FOCS2014      = {Proceedings of the 55th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2014)} }
+@String { FOCS2016      = {Proceedings of the 57th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2016)} }
+@String { ICALP2012     = {Proceedings of the 39th International Colloquium on Automata, Languages and Programming ({ICALP}~'2012)} }
+@String { ICALP2013     = {Proceedings of the 40th International Colloquium on Automata, Languages and Programming ({ICALP}~'2013)} }
+@String { ICCV2011      = {Proceedings of the 13th International Conference on Computer Vision ({ICCV}~'2011)} }
+@String { ICML2003      = {Proceedings of the 20th International Conference on Machine Learning ({ICML}~'2003)} }
+@String { ICML2006      = {Proceedings of the 23rd International Conference on Machine Learning ({ICML}~'2006)} }
+@String { ICML2009      = {Proceedings of the 26th International Conference on Machine Learning ({ICML}~'2009)} }
+@String { ICML2010      = {Proceedings of the 27th International Conference on Machine Learning ({ICML}~'2010)} }
+@String{ICML2015      = {Proceedings of the 32nd International Conference on Machine Learning ({ICML}~'2015)}}
+@String { IEEEP         = {Proceedings of the {IEEE}} }
+@String { IJAR          = {International Journal of Approximate Reasoning} }
+@String { IJCV          = {International Journal of Computer Vision} }
+@String { INFCOMP       = {Information and Computation} }
+@String { IPEC2015      = {Proceedings of the 10th International Symposium on Parameterized and Exact Computation ({IPEC}~'2015)} }
+@String { IPL           = {Information Processing Letters} }
+@String { JCB           = {Journal of Computational Biology} }
+@String { JCSS          = {Journal of Computer and System Sciences} }
+@String { JMLR          = {Journal of Machine Learning Research} }
+@String { NIPS2008      = {Proceedings of Advances in Neural Information Processing Systems~21 ({NIPS}~'2008)} }
+@String { NIPS2011      = {Proceedings of Advances in Neural Information Processing Systems~24 ({NIPS}~'2011)} }
+@String { NIPS2015      = {Proceedings of Advances in Neural Information Processing Systems~28 ({NIPS}~'2015)} }
+@String { PODS2015      = {Proceedings of the 34th {ACM} Symposium on Principles of Database Systems ({PODS}~'2015)} }
+@String { PODS2016      = {Proceedings of the 35th {ACM} Symposium on Principles of Database Systems ({PODS}~'2016)} }
+@String { SEQUENCES97   = {Proceedings of the Compression and Complexity of Sequences ({SEQUENCES}~'1997)} }
+@String { SICOMP        = {{SIAM} Journal on Computing} }
+@String { SIDM          = {{SIAM} Journal on Discrete Mathematics} }
+@String { SOCG2004      = {Proceedings of the 20th {ACM} Symposium on Computational Geometry ({SoCG}~'2004)} }
+@String { SOCG2015      = {Proceedings of the 31st International Symposium on Computational Geometry ({SoCG}~'2015)} }
+@String { SOCG2016      = {Proceedings of the 32nd International Symposium on Computational Geometry ({SoCG}~'2016)} }
+@String { SODA2004      = {Proceedings of the 15th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2004)} }
+@String { SODA2006      = {Proceedings of the 17th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2006)} }
+@String{SODA2009      = {Proceedings of the 20th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2009)}}
+@String{SODA2010      = {Proceedings of the 21st {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2010)}}
+@String { SODA2014      = {Proceedings of the 25th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2014)} }
+@String { SODA2016      = {Proceedings of the 27th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2016)} }
+@String { SODA2017      = {Proceedings of the 28th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2017)} }
+@String { SPAA2016      = {Proceedings of the 28th {ACM} Symposium on Parallelism in Algorithms and Architectures ({SPAA}~'2016)} }
+@String { STOC1995      = {Proceedings of the 27th {ACM} Symposium on the Theory of Computing ({STOC}~'1995)} }
+@String { STOC1998      = {Proceedings of the 30th {ACM} Symposium on the Theory of Computing ({STOC}~'1998)} }
+@String { STOC1999      = {Proceedings of the 31st {ACM} Symposium on the Theory of Computing ({STOC}~'1999)} }
+@String { STOC2002      = {Proceedings of the 34th {ACM} Symposium on the Theory of Computing ({STOC}~'2002)} }
+@String { STOC2008      = {Proceedings of the 40th {ACM} Symposium on the Theory of Computing ({STOC}~'2008)} }
+@String{STOC2011      = {Proceedings of the 43rd {ACM} Symposium on the Theory of Computing ({STOC}~'2011)}}
+@String { STOC2015      = {Proceedings of the 47th {ACM} Symposium on the Theory of Computing ({STOC}~'2015)} }
+@String { STOC2016      = {Proceedings of the 48th {ACM} Symposium on the Theory of Computing ({STOC}~'2016)} }
+@String { TALG          = {{ACM} Transactions on Algorithms} }
+@String { TCS           = {Theoretical Computer Science} }
+@String{TIT           = {{IEEE} Transactions on Information Theory}}
+@String { TOC           = {Theory of Computing} }
+@String { TOCT          = {{ACM} Transactions on Computation Theory} }
+@String { TPAMI         = {{IEEE} Transactions on Pattern Analysis and Machine Intelligence} }
+@String { UAI2009       = {Proceedings of the 25th Conference on Uncertainty in Artificial Intelligence ({UAI}~'2009)} }
+@String { VISAPP2009    = {Proceedings of the 4th International Conference on Computer Vision Theory and Applications ({VISAPP}~`2009)} }
+@String { VLDB1999      = {Proceedings of the 25th International Conference on Very Large Data Bases ({VLDB}~'1999)} }
+@String { VLDB2007      = {Proceedings of the 33rd International Conference on Very Large Data Bases ({VLDB}~'2007)} }
+@String { WADS2007      = {Proceedings of the 10th International Workshop on Algorithms and Data Structures ({WADS}~'2007)} }
+@String { WWW2005       = {Proceedings of the 14th international conference on World Wide Web ({WWW}~'2005)} }
 
 @InProceedings{AAKK14,
-  author    = {Amirali Abdullah and Alexandr Andoni and Ravindran Kannan and Robert Krauthgamer},
-  title     = {Spectral Approaches to Nearest Neighbor Search},
-  booktitle = FOCS2014,
-  year      = {2014},
-  pages     = {581--590},
-}
-
-@Article{IN07,
-  author  = {Piotr Indyk and Assaf Naor},
-  title   = {Nearest-neighbor-preserving embeddings},
-  journal = TALG,
-  year    = {2007},
-  volume  = {3},
-  number  = {3},
-}
-
-@InCollection{C06,
-  author    = {Kenneth L. Clarkson},
-  title     = {Nearest-Neighbor Searching and Metric Space Dimensions},
-  booktitle = {Nearest-Neighbor Methods in Learning and Vision: Theory and Practice},
-  publisher = {MIT Press},
-  year      = {2006},
-  editor    = {Gregory Shakhnarovich and Trevor Darrell and Piotr Indyk},
-  pages     = {15--59},
-}
-
-@InProceedings{DF08,
-  author    = {Sanjoy Dasgupta and Yoav Freund},
-  title     = {Random projection trees and low dimensional manifolds},
-  booktitle = STOC2008,
-  year      = {2008},
-  pages     = {537--546},
-}
-
-@Article{CNBM01,
-  author  = {Edgar Ch{\'{a}}vez and Gonzalo Navarro and Ricardo A. Baeza{-}Yates and Jos{\'{e}} L. Marroqu{\'{\i}}n},
-  title   = {Searching in metric spaces},
-  journal = ACMCS,
-  year    = {2001},
-  volume  = {33},
-  number  = {3},
-  pages   = {273--321},
-}
-
-@Unpublished{ALRW16a,
-  author = {Alexandr Andoni and Thijs Laarhoven and Ilya Razenshteyn and Erik Waingarten},
-  title  = {Optimal Hashing-based Time--Space Trade-offs for Approximate Near Neighbors},
-  note   = {Manuscript},
-  year   = {2016},
-}
-
-@InProceedings{MO15,
-  author    = {Alexander May and Ilya Ozerov},
-  title     = {On Computing Nearest Neighbors with Applications to Decoding of Binary Linear Codes},
-  booktitle = EUROCRYPT2015,
-  year      = {2015},
-  pages     = {203--228},
-}
-
-@InProceedings{PTW10,
-  author    = {Rina Panigrahy and Kunal Talwar and Udi Wieder},
-  title     = {Lower Bounds on Near Neighbor Search via Metric Expansion},
-  booktitle = FOCS2010,
-  year      = {2010},
-  pages     = {805--814},
-}
-
-@InProceedings{PTW08,
-  author    = {Rina Panigrahy and Kunal Talwar and Udi Wieder},
-  title     = {A Geometric Approach to Lower Bounds for Approximate Near-Neighbor Search and Partial Match},
-  booktitle = FOCS2008,
-  year      = {2008},
-  pages     = {414--423},
-}
-
-@InProceedings{ACP08,
-  author    = {Alexandr Andoni and Dorian Croitoru and Mihai Patrascu},
-  title     = {Hardness of Nearest Neighbor under {L}-infinity},
-  booktitle = FOCS2008,
-  year      = {2008},
-  pages     = {424--433},
-}
-
-@InProceedings{KP12,
-  author    = {Michael Kapralov and Rina Panigrahy},
-  title     = {{NNS} Lower Bounds via Metric Expansion for $\ell_\infty$ and {EMD}},
-  booktitle = ICALP2012,
-  year      = {2012},
-  pages     = {545--556},
+  Title                    = {Spectral Approaches to Nearest Neighbor Search},
+  Author                   = {Amirali Abdullah and Alexandr Andoni and Ravindran Kannan and Robert Krauthgamer},
+  Booktitle                = FOCS2014,
+  Year                     = {2014},
+  Pages                    = {581--590}
 }
 
 @InProceedings{AV15,
-  author    = {Amirali Abdullah and Suresh Venkatasubramanian},
-  title     = {A Directed Isoperimetric Inequality with application to {Bregman} Near Neighbor Lower Bounds},
-  booktitle = STOC2015,
-  year      = {2015},
-  pages     = {509--518},
+  Title                    = {A Directed Isoperimetric Inequality with application to {Bregman} Near Neighbor Lower Bounds},
+  Author                   = {Amirali Abdullah and Suresh Venkatasubramanian},
+  Booktitle                = STOC2015,
+  Year                     = {2015},
+  Pages                    = {509--518}
 }
 
-@InProceedings{LJWCL07,
-  author    = {Qin Lv and William Josephson and Zhe Wang and Moses Charikar and Kai Li},
-  title     = {Multi-Probe {LSH}: Efficient Indexing for High-Dimensional Similarity Search},
-  booktitle = VLDB2007,
-  year      = {2007},
-  pages     = {950--961},
+@InProceedings{APRS16,
+  Title                    = {On the Complexity of Inner Product Similarity Join},
+  Author                   = {Thomas D. Ahle and Rasmus Pagh and Ilya Razenshteyn and Francesco Silvestri},
+  Booktitle                = PODS2016,
+  Year                     = {2016},
+  Note                     = {Available as arXiv:1510.02824},
+  Pages                    = {151--164}
 }
 
-@InCollection{ADIIM06,
-  author    = {Alexandr Andoni and Mayur Datar and Nicole Immorlica and Piotr Indyk and Vahab S. Mirrokni},
-  title     = {Locality-sensitive hashing using stable distributions},
-  booktitle = {Nearest Neighbor Methods in Learning and Vision: Theory and Practice},
-  publisher = {MIT Press},
-  year      = {2006},
-  editor    = {Gregory Shakhnarovich and Trevor Darrell and Piotr Indyk},
-  pages     = {61--72},
-}
-
-@InProceedings{MNSW95,
-  author    = {Peter Bro Miltersen and Noam Nisan and Shmuel Safra and Avi Wigderson},
-  title     = {On data structures and asymmetric communication complexity},
-  booktitle = STOC1995,
-  year      = {1995},
-  pages     = {103--111},
-}
-
-@InProceedings{AIP06,
-  author    = {Alexandr Andoni and Piotr Indyk and Mihai Patrascu},
-  title     = {On the Optimality of the Dimensionality Reduction Method},
-  booktitle = FOCS2006,
-  year      = {2006},
-  pages     = {449--458},
-}
-
-@Article{P11,
-  author  = {Mihai Patrascu},
-  title   = {Unifying the Landscape of Cell-Probe Lower Bounds},
-  journal = SICOMP,
-  year    = {2011},
-  volume  = {40},
-  number  = {3},
-  pages   = {827--847},
-}
-
-@InProceedings{M99,
-  author    = {Peter Bro Miltersen},
-  title     = {Cell probe complexity -- a survey},
-  booktitle = {Advances in Data Structures},
-  year      = {1999},
-}
-
-@Article{PT09,
-  author  = {Mihai Patrascu and Mikkel Thorup},
-  title   = {Higher Lower Bounds for Near-Neighbor and Further Rich Problems},
-  journal = SICOMP,
-  year    = {2009},
-  volume  = {39},
-  number  = {2},
-  pages   = {730--741},
-}
-
-@InProceedings{LPY16,
-  author    = {Mingmou Liu and Xiaoyin Pan and Yitong Yin},
-  title     = {Randomized Approximate Nearest Neighbor Search with Limited Adaptivity},
-  booktitle = SPAA2016,
-  year      = {2016},
-  pages     = {23--33},
-}
-
-@Unpublished{Y16,
-  author = {Yitong Yin},
-  title  = {Simple average-case lower bounds for approximate near-neighbor from isoperimetric inequalities},
-  note   = {Available as arXiv:1602.05391},
-  year   = {2016},
-}
-
-@InProceedings{BOR99,
-  author    = {Allan Borodin and Rafail Ostrovsky and Yuval Rabani},
-  title     = {Lower Bounds for High Dimensional Nearest Neighbor Search and Related Problems},
-  booktitle = STOC1999,
-  year      = {1999},
-  pages     = {312--321},
-}
-
-@Article{BR02,
-  author  = {Omer Barkol and Yuval Rabani},
-  title   = {Tighter Lower Bounds for Nearest Neighbor Search and Related Problems in the Cell Probe Model},
-  journal = JCSS,
-  year    = {2002},
-  volume  = {64},
-  number  = {4},
-  pages   = {873--896},
-}
-
-@Article{JKKR04,
-  author  = {T. S. Jayram and Subhash Khot and Ravi Kumar and Yuval Rabani},
-  title   = {Cell-probe lower bounds for the partial match problem},
-  journal = JCSS,
-  year    = {2004},
-  volume  = {69},
-  number  = {3},
-  pages   = {435--447},
-}
-
-@InProceedings{CCGL99,
-  author    = {Amit Chakrabarti and Bernard Chazelle and Benjamin Gum and Alexey Lvov},
-  title     = {A Lower Bound on the Complexity of Approximate Nearest-Neighbor Searching on the Hamming Cube},
-  booktitle = STOC1999,
-  year      = {1999},
-  pages     = {305--311},
-}
-
-@Article{L04,
-  author  = {Ding Liu},
-  title   = {A strong lower bound for approximate nearest neighbor searching},
-  journal = IPL,
-  year    = {2004},
-  volume  = {92},
-  number  = {1},
-  pages   = {23--29},
-}
-
-@Misc{T,
-  title        = {Twitter},
-  howpublished = {Available as \texttt{https://twitter.com/}},
-}
-
-@Book{LRU14,
-  title     = {Mining of Massive Datasets},
-  publisher = {Cambridge University Press},
-  year      = {2014},
-  author    = {Jure Lescovec and Anand Rajaraman and Jeffrey David Ullman},
-  edition   = {second},
-}
-
-@Article{BDVJ03,
-  author  = {Yoshua Bengio and R\'{e}jean Ducharme and Pascal Vincent and Christian Janvin},
-  title   = {A neural probabilistic language model},
-  journal = JMLR,
-  year    = {2003},
-  volume  = {3},
-  pages   = {1137--1155},
-}
-
-@Article{B75,
-  author  = {Jon Bentley},
-  title   = {Multidimensional binary search trees used for associative searching},
-  journal = CACM,
-  year    = {1975},
-  volume  = {18},
-  number  = {9},
-  pages   = {509--517},
-}
-
-@Book{BCKO08,
-  title     = {Computational Geometry: Algorithms and Applications},
-  publisher = {Springer},
-  year      = {2008},
-  author    = {Mark de Berg and Otfried Cheong and Marc van Kreveld and Mark Overmars},
-  edition   = {third},
+@Article{AC09,
+  Title                    = {The Fast {J}ohnson--{L}indenstrauss Transform and Approximate Nearest Neighbors},
+  Author                   = {Nir Ailon and Bernard Chazelle},
+  Journal                  = SICOMP,
+  Year                     = {2009},
+  Number                   = {1},
+  Pages                    = {302--322},
+  Volume                   = {39}
 }
 
 @Article{AR14,
-  author  = {Nir Ailon and Holger Rauhut},
-  title   = {Fast and {RIP}-Optimal Transforms},
-  journal = DCG,
-  year    = {2014},
-  volume  = {52},
-  number  = {4},
-  pages   = {780--798},
+  Title                    = {Fast and {RIP}-Optimal Transforms},
+  Author                   = {Nir Ailon and Holger Rauhut},
+  Journal                  = DCG,
+  Year                     = {2014},
+  Number                   = {4},
+  Pages                    = {780--798},
+  Volume                   = {52}
 }
 
-@Unpublished{CFGMSA16,
-  author = {Krzysztof Choromanski and Francois Fagan and Cedric Gouy{-}Paille and Anne Morvan and Tamas Sarlos and Jamal Atif},
-  title  = {{TripleSpin} -- a generic compact paradigm for fast machine learning computations},
-  note   = {Available as arXiv:1605.0904},
-  year   = {2016},
+@InProceedings{AGR15,
+  Title                    = {Restricted Isometry Property for General p-Norms},
+  Author                   = {Zeyuan {Allen-Zhu} and Rati Gelashvili and Ilya Razenshteyn},
+  Booktitle                = SOCG2015,
+  Year                     = {2015},
+  Note                     = {Available as arXiv:1407.2178},
+  Pages                    = {451--460}
 }
 
-@Unpublished{KW16,
-  author = {Christopher Kennedy and Rachel Ward},
-  title  = {Fast Cross-Polytope Locality-Sensitive Hashing},
-  note   = {Available as arXiv:1602.06922},
-  year   = {2016},
-}
-
-@Article{FKS84,
-  author  = {Michael L. Fredman and J\'{a}nos Koml\'{o}s and Endre Szemer\'{e}di},
-  title   = {Storing a Sparse Table with {$O(1)$} Worst Case Access Time},
-  journal = JACM,
-  year    = {1984},
-  volume  = {31},
-  number  = {3},
-  pages   = {538--544},
-}
-
-@Article{OL81,
-  author  = {Mark H. Overmars and Jan van Leeuwen},
-  title   = {Some principles for dynamizing decomposable searching problems},
-  journal = IPL,
-  year    = {1981},
-  volume  = {12},
-  number  = {1},
-  pages   = {49--53},
-}
-
-@Article{LLR95,
-  author  = {Nathan Linial and Eran London and Yuri Rabinovich},
-  title   = {The geometry of graphs and some of its algorithmic applications},
-  journal = COMBINATORICA,
-  year    = {1995},
-  volume  = {15},
-  number  = {2},
-  pages   = {215--245},
-}
-
-@InProceedings{WDLSA09,
-  author    = {Kilian Weinberger and Anirban Dasgupta and John Langford and Alex Smola and Josh Attenberg},
-  title     = {Feature Hashing for Large Scale Multitask Learning},
-  booktitle = ICML2009,
-  year      = {2009},
-  pages     = {1113--1120},
-}
-
-@Article{CCF04,
-  author  = {Moses Charikar and Kevin Chen and Martin Farach{-}Colton},
-  title   = {Finding Frequent Items in Data Streams},
-  journal = TCS,
-  year    = {2004},
-  volume  = {312},
-  number  = {1},
-  pages   = {3--15},
-}
-
-@Misc{RS15,
-  author       = {Ilya Razenshteyn and Ludwig Schmidt},
-  title        = {{FALCONN}: Similarity Search over High-Dimensional Data},
-  howpublished = {Available as \texttt{https://falconn-lib.org/}},
-  year         = {2015},
-}
-
-@Misc{RS15a,
-  author       = {Ilya Razenshteyn and Ludwig Schmidt},
-  title        = {{FFHT}: a {C}99 implementation of the {F}ast {H}adamard {T}ransform},
-  howpublished = {Available as \texttt{https://github.com/FALCONN-LIB/FFHT}},
-  year         = {2015},
-}
-
-@Article{MJ05,
-  author  = {Matteo Frigo and Steven G. Johnson},
-  title   = {The Design and Implementation of {FFTW3}},
-  journal = IEEEP,
-  year    = {2005},
-  volume  = {93},
-  number  = {2},
-  pages   = {216--231},
+@Unpublished{AYS16,
+  Title                    = {Exploiting the Structure: Stochastic Gradient Methods Using Raw Clusters},
+  Author                   = {Zeyuan {Allen-Zhu} and Yang Yuan and Karthik Sridharan},
+  Note                     = {Available as arXiv:1602.02151},
+  Year                     = {2016}
 }
 
 @InProceedings{ACW16,
-  author    = {Josh Alman and Timothy M. Chan and Ryan Williams},
-  title     = {Polynomial Representations of Threshold Functions with Applications},
-  booktitle = FOCS2016,
-  year      = {2016},
-  note      = {To appear},
+  Title                    = {Polynomial Representations of Threshold Functions with Applications},
+  Author                   = {Josh Alman and Timothy M. Chan and Ryan Williams},
+  Booktitle                = FOCS2016,
+  Year                     = {2016},
+  Note                     = {To appear}
+}
+
+@PhdThesis{A09,
+  Title                    = {Nearest Neighbor Search: the Old, the New, and the Impossible},
+  Author                   = {Alexandr Andoni},
+  School                   = {MIT},
+  Year                     = {2009}
+}
+
+@InProceedings{ACP08,
+  Title                    = {Hardness of Nearest Neighbor under {L}-infinity},
+  Author                   = {Alexandr Andoni and Dorian Croitoru and Mihai Patrascu},
+  Booktitle                = FOCS2008,
+  Year                     = {2008},
+  Pages                    = {424--433}
+}
+
+@InCollection{ADIIM06,
+  Title                    = {Locality-sensitive hashing using stable distributions},
+  Author                   = {Alexandr Andoni and Mayur Datar and Nicole Immorlica and Piotr Indyk and Vahab S. Mirrokni},
+  Booktitle                = {Nearest Neighbor Methods in Learning and Vision: Theory and Practice},
+  Publisher                = {MIT Press},
+  Year                     = {2006},
+  Editor                   = {Gregory Shakhnarovich and Trevor Darrell and Piotr Indyk},
+  Pages                    = {61--72}
+}
+
+@Article{AI08,
+  Title                    = {Near-optimal hashing algorithms for approximate nearest neighbor in high dimensions},
+  Author                   = {Alexandr Andoni and Piotr Indyk},
+  Journal                  = CACM,
+  Year                     = {2008},
+  Number                   = {1},
+  Pages                    = {117--122},
+  Volume                   = {51}
+}
+
+@InProceedings{AI06,
+  Title                    = {Near-Optimal Hashing Algorithms for Approximate Nearest Neighbor in High Dimensions},
+  Author                   = {Alexandr Andoni and Piotr Indyk},
+  Booktitle                = FOCS2006,
+  Year                     = {2006},
+  Pages                    = {459--468}
+}
+
+@Misc{AI05,
+  Title                    = {{E2LSH}: {Exact} {Euclidean} Locality-Sensitive Hashing},
+
+  Author                   = {Alexandr Andoni and Piotr Indyk},
+  HowPublished             = {Available as \texttt{http://web.mit.edu/andoni/www/LSH/index.html}},
+  Year                     = {2005}
+}
+
+@InProceedings{AILRS15,
+  Title                    = {Practical and Optimal {LSH} for Angular Distance},
+  Author                   = {Alexandr Andoni and Piotr Indyk and Thijs Laarhoven and Ilya Razenshteyn and Ludwig Schmidt},
+  Booktitle                = NIPS2015,
+  Year                     = {2015},
+  Note                     = {Available as arXiv:1509.02897},
+  Pages                    = {1225--1233}
+}
+
+@InProceedings{AINR14,
+  Title                    = {Beyond Locality-Sensitive Hashing},
+  Author                   = {Alexandr Andoni and Piotr Indyk and Huy L. Nguyen and Ilya Razenshteyn},
+  Booktitle                = SODA2014,
+  Year                     = {2014},
+  Note                     = {Available as arXiv:1306.1547},
+  Pages                    = {1018--1028}
+}
+
+@InProceedings{AIP06,
+  Title                    = {On the Optimality of the Dimensionality Reduction Method},
+  Author                   = {Alexandr Andoni and Piotr Indyk and Mihai Patrascu},
+  Booktitle                = FOCS2006,
+  Year                     = {2006},
+  Pages                    = {449--458}
+}
+
+@InProceedings{AKR15,
+  Title                    = {Sketching and Embedding are Equivalent for Norms},
+  Author                   = {Alexandr Andoni and Robert Krauthgamer and Ilya Razenshteyn},
+  Booktitle                = STOC2015,
+  Year                     = {2015},
+  Note                     = {Available as arXiv:1411.2577},
+  Pages                    = {479--488}
+}
+
+@InProceedings{ALRW16a,
+  Title                    = {Optimal Hashing-based Time--Space Trade-offs for Approximate Near Neighbors},
+  Author                   = {Alexandr Andoni and Thijs Laarhoven and Ilya Razenshteyn and Erik Waingarten},
+  Booktitle                = SODA2017,
+  Year                     = {2017},
+  Note                     = {Available as arXiv:1608.03580}
+}
+
+@Unpublished{ALRW16,
+  Title                    = {Lower Bounds on Time--Space Trade-Offs for Approximate Near Neighbors},
+  Author                   = {Alexandr Andoni and Thijs Laarhoven and Ilya Razenshteyn and Erik Waingarten},
+  Note                     = {Available as arXiv:1605.02701},
+  Year                     = {2016}
+}
+
+@InProceedings{AR16,
+  Title                    = {Tight Lower Bounds for Data-Dependent Locality-Sensitive Hashing},
+  Author                   = {Alexandr Andoni and Ilya Razenshteyn},
+  Booktitle                = SOCG2016,
+  Year                     = {2016},
+  Note                     = {Available as arXiv:1507.04299},
+  Pages                    = {9:1--9:11}
+}
+
+@InProceedings{AR15,
+  Title                    = {Optimal Data-Dependent Hashing for Approximate Near Neighbors},
+  Author                   = {Alexandr Andoni and Ilya Razenshteyn},
+  Booktitle                = STOC2015,
+  Year                     = {2015},
+  Note                     = {Available as arXiv:1501.01062},
+  Pages                    = {793--801}
+}
+
+@InProceedings{ARS16,
+  Title                    = {{LSH} Forest: Practical Algorithms Made Theoretical},
+  Author                   = {Alexandr Andoni and Ilya Razenshteyn and Negev {Shekel Nosatzki}},
+  Booktitle                = SODA2017,
+  Year                     = {2017}
+}
+
+@InProceedings{BIRW16,
+  Title                    = {Nearly-optimal bounds for sparse recovery in generic norms, with applications to $k$-median sketching},
+  Author                   = {Arturs Backurs and Piotr Indyk and Ilya Razenshteyn and David P. Woodruff},
+  Booktitle                = SODA2016,
+  Year                     = {2016},
+  Note                     = {Available as arXiv:1504.01076},
+  Pages                    = {318--337}
+}
+
+@Article{BR02,
+  Title                    = {Tighter Lower Bounds for Nearest Neighbor Search and Related Problems in the Cell Probe Model},
+  Author                   = {Omer Barkol and Yuval Rabani},
+  Journal                  = JCSS,
+  Year                     = {2002},
+  Number                   = {4},
+  Pages                    = {873--896},
+  Volume                   = {64}
+}
+
+@Article{BJKS04,
+  Title                    = {An information statistics approach to data stream and communication complexity},
+  Author                   = {Ziv Bar-Yossef and T.S. Jayram and Ravi Kumar and D. Sivakumar},
+  Journal                  = JCSS,
+  Year                     = {2004},
+  Number                   = {4},
+  Pages                    = {702--732},
+  Volume                   = {68}
+}
+
+@InProceedings{BCG05,
+  Title                    = {{LSH} forest: self-tuning indexes for similarity search},
+  Author                   = {Mayank Bawa and Tyson Condie and Prasanna Ganesan},
+  Booktitle                = WWW2005,
+  Year                     = {2005},
+  Pages                    = {651--660}
+}
+
+@InProceedings{BDGL16,
+  Title                    = {New directions in nearest neighbor searching with applications to lattice sieving},
+  Author                   = {Anja Becker and L{\'{e}}o Ducas and Nicolas Gama and Thijs Laarhoven},
+  Booktitle                = SODA2016,
+  Year                     = {2016},
+  Pages                    = {10--24}
+}
+
+@Article{BDVJ03,
+  Title                    = {A neural probabilistic language model},
+  Author                   = {Yoshua Bengio and R\'{e}jean Ducharme and Pascal Vincent and Christian Janvin},
+  Journal                  = JMLR,
+  Year                     = {2003},
+  Pages                    = {1137--1155},
+  Volume                   = {3}
+}
+
+@Article{B75,
+  Title                    = {Multidimensional binary search trees used for associative searching},
+  Author                   = {Jon Bentley},
+  Journal                  = CACM,
+  Year                     = {1975},
+  Number                   = {9},
+  Pages                    = {509--517},
+  Volume                   = {18}
+}
+
+@Book{BCKO08,
+  Title                    = {Computational Geometry: Algorithms and Applications},
+  Author                   = {Mark de Berg and Otfried Cheong and Marc van Kreveld and Mark Overmars},
+  Publisher                = {Springer},
+  Year                     = {2008},
+  Edition                  = {third}
+}
+
+@Misc{B13,
+  Title                    = {{ANNOY}: Approximate Nearest Neighbors in {C}++/{P}ython optimized for memory usage and loading/saving to disk},
+
+  Author                   = {Erik Bernhardsson},
+  Note                     = {Available as \texttt{https://github.com/spotify/annoy}},
+  Year                     = {2013}
+}
+
+@InProceedings{BKL06,
+  Title                    = {Cover trees for nearest neighbor},
+  Author                   = {Alina Beygelzimer and Sham Kakade and John Langford},
+  Booktitle                = ICML2006,
+  Year                     = {2006},
+  Pages                    = {97--104}
+}
+
+@InProceedings{BOR99,
+  Title                    = {Lower Bounds for High Dimensional Nearest Neighbor Search and Related Problems},
+  Author                   = {Allan Borodin and Rafail Ostrovsky and Yuval Rabani},
+  Booktitle                = STOC1999,
+  Year                     = {1999},
+  Pages                    = {312--321}
+}
+
+@InProceedings{B97,
+  Title                    = {On the Resemblance and Containment of Documents},
+  Author                   = {Andrei Z. Broder},
+  Booktitle                = SEQUENCES97,
+  Year                     = {1997},
+  Pages                    = {21--29}
+}
+
+@Article{BGMZ97,
+  Title                    = {Syntactic clustering of the Web},
+  Author                   = {Andrei Z. Broder and Steven C. Glassman and Mark S. Manasse and Geoffrey Zweig},
+  Journal                  = COMPNET,
+  Year                     = {1997},
+  Number                   = {8--13},
+  Pages                    = {1157--1166},
+  Volume                   = {29}
+}
+
+@Article{B03,
+  Title                    = {Provably Sensitive Indexing Strategies for Biosequence Similarity Search},
+  Author                   = {Jeremy Buhler},
+  Journal                  = JCB,
+  Year                     = {2003},
+  Number                   = {3/4},
+  Pages                    = {399--417},
+  Volume                   = {10}
+}
+
+@Article{CNBM01,
+  Title                    = {Searching in metric spaces},
+  Author                   = {Edgar Ch{\'{a}}vez and Gonzalo Navarro and Ricardo A. Baeza{-}Yates and Jos{\'{e}} L. Marroqu{\'{\i}}n},
+  Journal                  = ACMCS,
+  Year                     = {2001},
+  Number                   = {3},
+  Pages                    = {273--321},
+  Volume                   = {33}
+}
+
+@InProceedings{CCGL99,
+  Title                    = {A Lower Bound on the Complexity of Approximate Nearest-Neighbor Searching on the Hamming Cube},
+  Author                   = {Amit Chakrabarti and Bernard Chazelle and Benjamin Gum and Alexey Lvov},
+  Booktitle                = STOC1999,
+  Year                     = {1999},
+  Pages                    = {305--311}
+}
+
+@Article{CR10,
+  Title                    = {An Optimal Randomized Cell Probe Lower Bound for Approximate Nearest Neighbor Searching},
+  Author                   = {Amit Chakrabarti and Oded Regev},
+  Journal                  = SICOMP,
+  Year                     = {2010},
+  Number                   = {5},
+  Pages                    = {1919--1940},
+  Volume                   = {39}
+}
+
+@InProceedings{C02,
+  Title                    = {Similarity estimation techniques from rounding algorithms},
+  Author                   = {Moses Charikar},
+  Booktitle                = STOC2002,
+  Year                     = {2002},
+  Pages                    = {380--388}
+}
+
+@Article{CCF04,
+  Title                    = {Finding Frequent Items in Data Streams},
+  Author                   = {Moses Charikar and Kevin Chen and Martin Farach{-}Colton},
+  Journal                  = TCS,
+  Year                     = {2004},
+  Number                   = {1},
+  Pages                    = {3--15},
+  Volume                   = {312}
+}
+
+@Unpublished{CFGMSA16,
+  Title                    = {{TripleSpin} -- a generic compact paradigm for fast machine learning computations},
+  Author                   = {Krzysztof Choromanski and Francois Fagan and Cedric Gouy{-}Paille and Anne Morvan and Tamas Sarlos and Jamal Atif},
+  Note                     = {Available as arXiv:1605.0904},
+  Year                     = {2016}
+}
+
+@InCollection{C06,
+  Title                    = {Nearest-Neighbor Searching and Metric Space Dimensions},
+  Author                   = {Kenneth L. Clarkson},
+  Booktitle                = {Nearest-Neighbor Methods in Learning and Vision: Theory and Practice},
+  Publisher                = {MIT Press},
+  Year                     = {2006},
+  Editor                   = {Gregory Shakhnarovich and Trevor Darrell and Piotr Indyk},
+  Pages                    = {15--59}
+}
+
+@Article{C88,
+  Title                    = {A Randomized Algorithm for Closest-Point Queries},
+  Author                   = {Kenneth L. Clarkson},
+  Journal                  = SICOMP,
+  Year                     = {1988},
+  Number                   = {4},
+  Pages                    = {830--847},
+  Volume                   = {17}
+}
+
+@Book{NRC13,
+  Title                    = {Frontiers in Massive Data Analysis},
+  Author                   = {National Research Council},
+  Publisher                = {The National Academies Press},
+  Year                     = {2013},
+
+  Address                  = {Washington, DC},
+
+  ISBN                     = {978-0-309-28778-4}
+}
+
+@InProceedings{DF08,
+  Title                    = {Random projection trees and low dimensional manifolds},
+  Author                   = {Sanjoy Dasgupta and Yoav Freund},
+  Booktitle                = STOC2008,
+  Year                     = {2008},
+  Pages                    = {537--546}
+}
+
+@InProceedings{DS13,
+  Title                    = {Randomized partition trees for exact nearest neighbor search},
+  Author                   = {Sanjoy Dasgupta and Kaushik Sinha},
+  Booktitle                = COLT2013,
+  Year                     = {2013},
+  Pages                    = {317--337}
+}
+
+@InProceedings{DIIM04,
+  Title                    = {Locality-sensitive hashing scheme based on p-stable distributions},
+  Author                   = {Mayur Datar and Nicole Immorlica and Piotr Indyk and Vahab S. Mirrokni},
+  Booktitle                = SOCG2004,
+  Year                     = {2004},
+  Pages                    = {253--262}
+}
+
+@InProceedings{DRT11,
+  Title                    = {Nearest Neighbor based Greedy Coordinate Descent},
+  Author                   = {Inderjit S. Dhillon and Pradeep Ravikumar and Ambuj Tewari},
+  Booktitle                = NIPS2011,
+  Year                     = {2011},
+  Pages                    = {2160--2168}
+}
+
+@Misc{D09,
+  Title                    = {{LSHKIT}: {A} {C++} Locality Sensitive Hashing Library},
+
+  Author                   = {Wei Dong},
+  HowPublished             = {Available as \texttt{http://lshkit.sourceforge.net/}},
+  Year                     = {2009}
+}
+
+@Article{FKS84,
+  Title                    = {Storing a Sparse Table with {$O(1)$} Worst Case Access Time},
+  Author                   = {Michael L. Fredman and J\'{a}nos Koml\'{o}s and Endre Szemer\'{e}di},
+  Journal                  = JACM,
+  Year                     = {1984},
+  Number                   = {3},
+  Pages                    = {538--544},
+  Volume                   = {31}
+}
+
+@Article{MJ05,
+  Title                    = {The Design and Implementation of {FFTW3}},
+  Author                   = {Matteo Frigo and Steven G. Johnson},
+  Journal                  = IEEEP,
+  Year                     = {2005},
+  Number                   = {2},
+  Pages                    = {216--231},
+  Volume                   = {93}
+}
+
+@InProceedings{GIM99,
+  Title                    = {Similarity Search in High Dimensions via Hashing},
+  Author                   = {Aristides Gionis and Piotr Indyk and Rajeev Motwani},
+  Booktitle                = VLDB1999,
+  Year                     = {1999},
+  Pages                    = {518--529}
+}
+
+@Article{HIM12,
+  Title                    = {Approximate Nearest Neighbor: Towards Removing the Curse of Dimensionality},
+  Author                   = {Sariel Har{-}Peled and Piotr Indyk and Rajeev Motwani},
+  Journal                  = TOC,
+  Year                     = {2012},
+  Number                   = {1},
+  Pages                    = {321--350},
+  Volume                   = {8}
+}
+
+@InProceedings{HLLM15,
+  Title                    = {Variance Reduced Stochastic Gradient Descent with Neighbors},
+  Author                   = {Thomas Hofmann and Aur{\'{e}}lien Lucchi and Simon Lacoste{-}Julien and Brian McWilliams},
+  Booktitle                = NIPS2015,
+  Year                     = {2015},
+  Pages                    = {2305--2313}
+}
+
+@Article{I06,
+  Title                    = {Stable distributions, pseudorandom generators, embeddings, and data stream computation},
+  Author                   = {Piotr Indyk},
+  Journal                  = JACM,
+  Year                     = {2006},
+  Number                   = {3},
+  Pages                    = {307--323},
+  Volume                   = {53}
+}
+
+@Article{I01,
+  Title                    = {On Approximate Nearest Neighbors under $\ell_{\infty}$ Norm},
+  Author                   = {Piotr Indyk},
+  Journal                  = JCSS,
+  Year                     = {2001},
+  Number                   = {4},
+  Pages                    = {627--638},
+  Volume                   = {63}
+}
+
+@PhdThesis{I01a,
+  Title                    = {High-Dimensional Computational Geometry},
+  Author                   = {Piotr Indyk},
+  School                   = {Stanford University},
+  Year                     = {2001}
+}
+
+@InProceedings{IM98,
+  Title                    = {Approximate Nearest Neighbors: Towards Removing the Curse of Dimensionality},
+  Author                   = {Piotr Indyk and Rajeev Motwani},
+  Booktitle                = STOC1998,
+  Year                     = {1998},
+  Pages                    = {604--613}
+}
+
+@Article{IN07,
+  Title                    = {Nearest-neighbor-preserving embeddings},
+  Author                   = {Piotr Indyk and Assaf Naor},
+  Journal                  = TALG,
+  Year                     = {2007},
+  Number                   = {3},
+  Volume                   = {3}
+}
+
+@InProceedings{IR13,
+  Title                    = {On Model-Based {RIP-1} Matrices},
+  Author                   = {Piotr Indyk and Ilya Razenshteyn},
+  Booktitle                = ICALP2013,
+  Year                     = {2013},
+  Note                     = {Available as arXiv:1304.3604},
+  Pages                    = {564--575}
+}
+
+@Article{JKKR04,
+  Title                    = {Cell-probe lower bounds for the partial match problem},
+  Author                   = {T. S. Jayram and Subhash Khot and Ravi Kumar and Yuval Rabani},
+  Journal                  = JCSS,
+  Year                     = {2004},
+  Number                   = {3},
+  Pages                    = {435--447},
+  Volume                   = {69}
+}
+
+@InCollection{JL84,
+  Title                    = {Extensions of {L}ipschitz mappings into a {H}ilbert space},
+  Author                   = {William Johnson and Joram Lindenstrauss},
+  Booktitle                = {Conference in modern analysis and probability ({N}ew {H}aven, {C}onn., 1982)},
+  Year                     = {1984},
+  Pages                    = {189--206},
+  Series                   = {Contemporary Mathematics},
+  Volume                   = {26}
+}
+
+@InProceedings{K15,
+  Title                    = {Smooth Tradeoffs between Insert and Query Complexity in Nearest Neighbor Search},
+  Author                   = {Michael Kapralov},
+  Booktitle                = PODS2015,
+  Year                     = {2015},
+  Pages                    = {329--342}
+}
+
+@InProceedings{KP12,
+  Title                    = {{NNS} Lower Bounds via Metric Expansion for $\ell_\infty$ and {EMD}},
+  Author                   = {Michael Kapralov and Rina Panigrahy},
+  Booktitle                = ICALP2012,
+  Year                     = {2012},
+  Pages                    = {545--556}
+}
+
+@InProceedings{KR02,
+  Title                    = {Finding nearest neighbors in growth-restricted metrics},
+  Author                   = {David R. Karger and Matthias Ruhl},
+  Booktitle                = STOC2002,
+  Year                     = {2002},
+  Pages                    = {741--750}
+}
+
+@InProceedings{KKK16,
+  Title                    = {A Faster Subquadratic Algorithm for Finding Outlier Correlations},
+  Author                   = {Matti Karppa and Petteri Kaski and Jukka Kohonen},
+  Booktitle                = SODA2016,
+  Year                     = {2016},
+  Pages                    = {1288--1305}
+}
+
+@InProceedings{KKKO16,
+  Title                    = {Explicit correlation amplifiers for finding outlier correlations in deterministic subquadratic time},
+  Author                   = {Karppa, Matti and Kaski, Petteri and Kohonen, Jukka and {{\'O} Cath{\'a}in}, Padraig},
+  Booktitle                = ESA2016,
+  Year                     = {2016},
+  Note                     = {To appear}
+}
+
+@Article{KU11,
+  Title                    = {Fast Polynomial Factorization and Modular Composition},
+  Author                   = {Kiran Kedlaya and Christopher Umans},
+  Journal                  = SICOMP,
+  Year                     = {2011},
+  Number                   = {6},
+  Pages                    = {1767--1802},
+  Volume                   = {40}
+}
+
+@Unpublished{KW16,
+  Title                    = {Fast Cross-Polytope Locality-Sensitive Hashing},
+  Author                   = {Christopher Kennedy and Rachel Ward},
+  Note                     = {Available as arXiv:1602.06922},
+  Year                     = {2016}
+}
+
+@InProceedings{KL04,
+  Title                    = {Navigating nets: simple algorithms for proximity search},
+  Author                   = {Robert Krauthgamer and James R. Lee},
+  Booktitle                = SODA2004,
+  Year                     = {2004},
+  Pages                    = {798--807}
+}
+
+@Article{KOR00,
+  Title                    = {Efficient Search for Approximate Nearest Neighbor in High Dimensional Spaces},
+  Author                   = {Eyal Kushilevitz and Rafail Ostrovsky and Yuval Rabani},
+  Journal                  = SICOMP,
+  Year                     = {2000},
+  Number                   = {2},
+  Pages                    = {457--474},
+  Volume                   = {30}
+}
+
+@InProceedings{L15,
+  Title                    = {Sieving for Shortest Vectors in Lattices Using Angular Locality-Sensitive Hashing},
+  Author                   = {Thijs Laarhoven},
+  Booktitle                = CRYPTO2015,
+  Year                     = {2015},
+  Pages                    = {3--22}
+}
+
+@Unpublished{L15a,
+  Title                    = {Tradeoffs for nearest neighbors on the sphere},
+  Author                   = {Thijs Laarhoven},
+  Note                     = {Available as arXiv:1511.07527},
+  Year                     = {2015}
+}
+
+@PhdThesis{L15b,
+  Title                    = {Search problems in cryptography: From fingerprinting to lattice sieving},
+  Author                   = {Thijs Laarhoven},
+  School                   = {Eindhoven University of Technology},
+  Year                     = {2015}
+}
+
+@Book{LRU14,
+  Title                    = {Mining of Massive Datasets},
+  Author                   = {Jure Lescovec and Anand Rajaraman and Jeffrey David Ullman},
+  Publisher                = {Cambridge University Press},
+  Year                     = {2014},
+  Edition                  = {second}
+}
+
+@Article{LLR95,
+  Title                    = {The geometry of graphs and some of its algorithmic applications},
+  Author                   = {Nathan Linial and Eran London and Yuri Rabinovich},
+  Journal                  = COMBINATORICA,
+  Year                     = {1995},
+  Number                   = {2},
+  Pages                    = {215--245},
+  Volume                   = {15}
+}
+
+@Article{L04,
+  Title                    = {A strong lower bound for approximate nearest neighbor searching},
+  Author                   = {Ding Liu},
+  Journal                  = IPL,
+  Year                     = {2004},
+  Number                   = {1},
+  Pages                    = {23--29},
+  Volume                   = {92}
+}
+
+@InProceedings{LPY16,
+  Title                    = {Randomized Approximate Nearest Neighbor Search with Limited Adaptivity},
+  Author                   = {Mingmou Liu and Xiaoyin Pan and Yitong Yin},
+  Booktitle                = SPAA2016,
+  Year                     = {2016},
+  Pages                    = {23--33}
+}
+
+@InProceedings{LJWCL07,
+  Title                    = {Multi-Probe {LSH}: Efficient Indexing for High-Dimensional Similarity Search},
+  Author                   = {Qin Lv and William Josephson and Zhe Wang and Moses Charikar and Kai Li},
+  Booktitle                = VLDB2007,
+  Year                     = {2007},
+  Pages                    = {950--961}
+}
+
+@InProceedings{MO15,
+  Title                    = {On Computing Nearest Neighbors with Applications to Decoding of Binary Linear Codes},
+  Author                   = {Alexander May and Ilya Ozerov},
+  Booktitle                = EUROCRYPT2015,
+  Year                     = {2015},
+  Pages                    = {203--228}
+}
+
+@Article{M01,
+  Title                    = {A fast nearest-neighbor algorithm based on a principal axis search tree},
+  Author                   = {James McNames},
+  Journal                  = TPAMI,
+  Year                     = {2001},
+  Number                   = {9},
+  Pages                    = {964--976},
+  Volume                   = {23}
+}
+
+@Article{M93,
+  Title                    = {Point Location in Arrangements of Hyperplanes},
+  Author                   = {Stefan Meiser},
+  Journal                  = INFCOMP,
+  Year                     = {1993},
+  Number                   = {2},
+  Pages                    = {286--303},
+  Volume                   = {106}
+}
+
+@InProceedings{M99,
+  Title                    = {Cell probe complexity -- a survey},
+  Author                   = {Peter Bro Miltersen},
+  Booktitle                = {Advances in Data Structures},
+  Year                     = {1999}
+}
+
+@InProceedings{MNSW95,
+  Title                    = {On data structures and asymmetric communication complexity},
+  Author                   = {Peter Bro Miltersen and Noam Nisan and Shmuel Safra and Avi Wigderson},
+  Booktitle                = STOC1995,
+  Year                     = {1995},
+  Pages                    = {103--111}
+}
+
+@Article{MNP07,
+  Title                    = {Lower Bounds on Locality Sensitive Hashing},
+  Author                   = {Rajeev Motwani and Assaf Naor and Rina Panigrahy},
+  Journal                  = SIDM,
+  Year                     = {2007},
+  Number                   = {4},
+  Pages                    = {930--935},
+  Volume                   = {21}
+}
+
+@InProceedings{ML09,
+  Title                    = {Fast Approximate Nearest Neighbors with Automatic Algorithm Configuration},
+  Author                   = {Marius Muja and David G. Lowe},
+  Booktitle                = VISAPP2009,
+  Year                     = {2009},
+  Pages                    = {331--340}
+}
+
+@Article{OWZ14,
+  Title                    = {Optimal Lower Bounds for Locality-Sensitive Hashing (Except When $q$ is Tiny)},
+  Author                   = {Ryan O'Donnell and Yi Wu and Yuan Zhou},
+  Journal                  = TOCT,
+  Year                     = {2014},
+  Number                   = {1},
+  Pages                    = {5},
+  Volume                   = {6}
+}
+
+@Article{OL81,
+  Title                    = {Some principles for dynamizing decomposable searching problems},
+  Author                   = {Mark H. Overmars and Jan van Leeuwen},
+  Journal                  = IPL,
+  Year                     = {1981},
+  Number                   = {1},
+  Pages                    = {49--53},
+  Volume                   = {12}
+}
+
+@InProceedings{P16,
+  Title                    = {Locality-sensitive Hashing without False Negatives},
+  Author                   = {Rasmus Pagh},
+  Booktitle                = SODA2016,
+  Year                     = {2016},
+  Pages                    = {1--9}
+}
+
+@InProceedings{P06,
+  Title                    = {Entropy based nearest neighbor search in high dimensions},
+  Author                   = {Rina Panigrahy},
+  Booktitle                = SODA2006,
+  Year                     = {2006},
+  Pages                    = {1186--1195}
+}
+
+@InProceedings{PTW10,
+  Title                    = {Lower Bounds on Near Neighbor Search via Metric Expansion},
+  Author                   = {Rina Panigrahy and Kunal Talwar and Udi Wieder},
+  Booktitle                = FOCS2010,
+  Year                     = {2010},
+  Pages                    = {805--814}
+}
+
+@InProceedings{PTW08,
+  Title                    = {A Geometric Approach to Lower Bounds for Approximate Near-Neighbor Search and Partial Match},
+  Author                   = {Rina Panigrahy and Kunal Talwar and Udi Wieder},
+  Booktitle                = FOCS2008,
+  Year                     = {2008},
+  Pages                    = {414--423}
+}
+
+@Article{P11,
+  Title                    = {Unifying the Landscape of Cell-Probe Lower Bounds},
+  Author                   = {Mihai Patrascu},
+  Journal                  = SICOMP,
+  Year                     = {2011},
+  Number                   = {3},
+  Pages                    = {827--847},
+  Volume                   = {40}
+}
+
+@Article{PT09,
+  Title                    = {Higher Lower Bounds for Near-Neighbor and Further Rich Problems},
+  Author                   = {Mihai Patrascu and Mikkel Thorup},
+  Journal                  = SICOMP,
+  Year                     = {2009},
+  Number                   = {2},
+  Pages                    = {730--741},
+  Volume                   = {39}
+}
+
+@InProceedings{PSM14,
+  Title                    = {{GloVe}: Global Vectors for Word Representation},
+  Author                   = {Jeffrey Pennington and Richard Socher and Christopher Manning},
+  Booktitle                = EMNLP2014,
+  Year                     = {2014},
+  Pages                    = {1532--1543}
+}
+
+@Misc{RS15,
+  Title                    = {{FALCONN}: Similarity Search over High-Dimensional Data},
+
+  Author                   = {Ilya Razenshteyn and Ludwig Schmidt},
+  HowPublished             = {Available as \texttt{https://falconn-lib.org/}},
+  Year                     = {2015}
+}
+
+@Misc{RS15a,
+  Title                    = {{FFHT}: a {C}99 implementation of the {F}ast {H}adamard {T}ransform},
+
+  Author                   = {Ilya Razenshteyn and Ludwig Schmidt},
+  HowPublished             = {Available as \texttt{https://github.com/FALCONN-LIB/FFHT}},
+  Year                     = {2015}
+}
+
+@InProceedings{RSW16,
+  Title                    = {Weighted low rank approximations with provable guarantees},
+  Author                   = {Ilya Razenshteyn and Zhao Song and David P. Woodruff},
+  Booktitle                = STOC2016,
+  Year                     = {2016},
+  Pages                    = {250--263}
+}
+
+@Article{RTG00,
+  Title                    = {The {E}arth {M}over's {D}istance as a Metric for Image Retrieval},
+  Author                   = {Yossi Rubner and Carlo Tomasi and Leonidas J. Guibas},
+  Journal                  = IJCV,
+  Year                     = {2000},
+  Number                   = {2},
+  Pages                    = {99--121},
+  Volume                   = {40}
+}
+
+@Article{SH09,
+  Title                    = {Semantic Hashing},
+  Author                   = {Ruslan Salakhutdinov and Geoffrey Hinton},
+  Journal                  = IJAR,
+  Year                     = {2009},
+  Number                   = {7},
+  Pages                    = {969--978},
+  Volume                   = {50}
+}
+
+@Book{SDI06,
+  Title                    = {Nearest-Neighbor Methods in Learning and Vision: Theory and Practice},
+  Author                   = {Gregory Shakhnarovich and Trevor Darrell and Piotr Indyk},
+  Publisher                = {MIT Press},
+  Year                     = {2006}
+}
+
+@InProceedings{SH08,
+  Title                    = {Optimised {KD}-trees for fast image descriptor matching},
+  Author                   = {Chanop Silpa{-}Anan and Richard Hartley},
+  Booktitle                = CVPR2008,
+  Year                     = {2008},
+  Pages                    = {1--8}
+}
+
+@Unpublished{SS16,
+  Title                    = {Scalable and Sustainable Deep Learning via Randomized Hashing},
+  Author                   = {Ryan Spring and Anshumali Shrivastava},
+  Note                     = {Available as arXiv:1602.08194},
+  Year                     = {2016}
+}
+
+@Article{S91,
+  Title                    = {Refinements to nearest-neighbor searching in $k$-dimensional trees},
+  Author                   = {Robert F. Sproull},
+  Journal                  = ALGORITHMICA,
+  Year                     = {1991},
+  Number                   = {1--6},
+  Pages                    = {579--589},
+  Volume                   = {6}
+}
+
+@InProceedings{SJ03,
+  Title                    = {Weighted Low-Rank Approximations},
+  Author                   = {Nathan Srebro and Tommi Jaakkola},
+  Booktitle                = ICML2003,
+  Year                     = {2003},
+  Pages                    = {720--727},
+
+  Owner                    = {ilyaraz},
+  Timestamp                = {2016.10.13}
+}
+
+@InProceedings{TT07,
+  Title                    = {Spherical {LSH} for Approximate Nearest Neighbor Search on Unit Hypersphere},
+  Author                   = {Kengo Terasawa and Yuzuru Tanaka},
+  Booktitle                = WADS2007,
+  Year                     = {2007},
+  Pages                    = {27--38}
+}
+
+@Article{V15,
+  Title                    = {Finding Correlations in Subquadratic Time, with Applications to Learning Parities and the Closest Pair Problem},
+  Author                   = {Gregory Valiant},
+  Journal                  = JACM,
+  Year                     = {2015},
+  Number                   = {2},
+  Pages                    = {13},
+  Volume                   = {62}
+}
+
+@InProceedings{VKS09,
+  Title                    = {Which Spatial Partition Trees are Adaptive to Intrinsic Dimension?},
+  Author                   = {Nakul Verma and Samory Kpotufe and Sanjoy},
+  Booktitle                = UAI2009,
+  Year                     = {2009}
+}
+
+@InProceedings{WKC10,
+  Title                    = {Sequential Projection Learning for Hashing with Compact Codes},
+  Author                   = {Jun Wang and Sanjiv Kumar and Shih{-}Fu Chang},
+  Booktitle                = ICML2010,
+  Year                     = {2010},
+  Pages                    = {1127--1134}
+}
+
+@Unpublished{WLKC15,
+  Title                    = {Learning to Hash for Indexing Big Data - A Survey},
+  Author                   = {Jun Wang and Wei Liu and Sanjiv Kumar and Shih-Fu Chang},
+  Note                     = {Available as arXiv:1509.05472},
+  Year                     = {2015}
+}
+
+@Unpublished{WSSJ14,
+  Title                    = {Hashing for Similarity Search: a Survey},
+  Author                   = {Jingdong Wang and Heng Tao Shen and Kingkuan Song and Jianqiu Ji},
+  Note                     = {Available as arXiv:1408.2927},
+  Year                     = {2014}
+}
+
+@InProceedings{WDLSA09,
+  Title                    = {Feature Hashing for Large Scale Multitask Learning},
+  Author                   = {Kilian Weinberger and Anirban Dasgupta and John Langford and Alex Smola and Josh Attenberg},
+  Booktitle                = ICML2009,
+  Year                     = {2009},
+  Pages                    = {1113--1120}
+}
+
+@InProceedings{WTF08,
+  Title                    = {Spectral Hashing},
+  Author                   = {Yair Weiss and Antonio Torralba and Rob Fergus},
+  Booktitle                = NIPS2008,
+  Year                     = {2008},
+  Pages                    = {1753--1760}
+}
+
+@InProceedings{W15,
+  Title                    = {Hardness of Easy Problems: Basing Hardness on Popular Conjectures such as the Strong Exponential Time Hypothesis (Invited Talk)},
+  Author                   = {{Virginia Vassilevska} Williams},
+  Booktitle                = IPEC2015,
+  Year                     = {2015},
+  Pages                    = {17--29}
+}
+
+@InProceedings{YSRL11,
+  Title                    = {The Power of Comparative Reasoning},
+  Author                   = {Jay Yagnik and Dennis Strelow and David Ross and Ruei-Sung Lin},
+  Booktitle                = ICCV2011,
+  Year                     = {2011}
+}
+
+@Book{Y12,
+  Title                    = {Locally Decodable Codes},
+  Author                   = {Sergey Yekhanin},
+  Publisher                = {Now Publishers},
+  Year                     = {2012},
+  Number                   = {3},
+  Series                   = {Foundations and Trends in Theoretical Computer Science},
+  Volume                   = {6}
+}
+
+@Unpublished{Y16,
+  Title                    = {Simple average-case lower bounds for approximate near-neighbor from isoperimetric inequalities},
+  Author                   = {Yitong Yin},
+  Note                     = {Available as arXiv:1602.05391},
+  Year                     = {2016}
+}
+
+@Misc{T,
+  Title                    = {Twitter},
+  HowPublished             = {Available as \texttt{https://twitter.com/}}
+}
+
+@InProceedings{IP11,
+  author    = {Piotr Indyk and Eric Price},
+  title     = {K-median clustering, model-based compressive sensing, and sparse recovery for earth mover distance},
+  booktitle = STOC2011,
+  year      = {2011},
+  pages     = {627--636},
+}
+
+@InProceedings{DIPW10,
+  author    = {Khanh {Do Ba} and Piotr Indyk and Eric Price and David P. Woodruff},
+  title     = {Lower Bounds for Sparse Recovery},
+  booktitle = SODA2010,
+  year      = {2010},
+  pages     = {1190--1197},
+}
+
+@Article{CRT06,
+  author  = {Emmanuel J. Candes and Justin K. Romberg and Terence Tao},
+  title   = {Robust uncertainty principles: exact signal reconstruction from highly incomplete frequency information},
+  journal = TIT,
+  year    = {2006},
+  volume  = {52},
+  number  = {2},
+  pages   = {489--509},
+}
+
+@InProceedings{KSKW15,
+  author    = {Matt J. Kusner and Yu Sun and Nicholas I. Koklin and Kilian Q. Weinberger},
+  title     = {From Word Embeddings To Document Distances},
+  booktitle = ICML2015,
+  year      = {2015},
+  pages     = {957--966},
+}
+
+@InProceedings{AIK09,
+  author    = {Alexandr Andoni and Piotr Indyk and Robert Krauthgamer},
+  title     = {Overcoming the $\ell_1$ Non-Embeddability Barrier: Algorithms for Product Metrics},
+  booktitle = SODA2009,
+  year      = {2009},
+  pages     = {865--874},
+}
+
+@Book{MOA11,
+  title     = {Inequalities: theory of majorization and its applications},
+  publisher = {Academic press},
+  year      = {2011},
+  author    = {Albert W. Marshall and Ingram Olkin and Barry C. Arnold},
+}
+
+@Unpublished{BCKY15,
+  author = {Vladimir Braverman and Stephen R. Chestnut and Robert Krauthgamer and Lin F. Yang},
+  title  = {Streaming Symmetric Norms via Measure Concentration},
+  note   = {Available as arXiv:1511.01111},
+  year   = {2015},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
