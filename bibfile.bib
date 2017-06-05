@@ -21,6 +21,7 @@
 @String { FOCS2016      = {Proceedings of the 57th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2016)} }
 @String { ICALP2012     = {Proceedings of the 39th International Colloquium on Automata, Languages and Programming ({ICALP}~'2012)} }
 @String { ICALP2013     = {Proceedings of the 40th International Colloquium on Automata, Languages and Programming ({ICALP}~'2013)} }
+@String{ICALP2016     = {Proceedings of the 43rd International Colloquium on Automata, Languages and Programming ({ICALP}~'2016)}}
 @String { ICCV2011      = {Proceedings of the 13th International Conference on Computer Vision ({ICCV}~'2011)} }
 @String { ICML2003      = {Proceedings of the 20th International Conference on Machine Learning ({ICML}~'2003)} }
 @String { ICML2006      = {Proceedings of the 23rd International Conference on Machine Learning ({ICML}~'2006)} }
@@ -33,6 +34,7 @@
 @String { INFCOMP       = {Information and Computation} }
 @String { IPEC2015      = {Proceedings of the 10th International Symposium on Parameterized and Exact Computation ({IPEC}~'2015)} }
 @String { IPL           = {Information Processing Letters} }
+@String{ITCS2017      = {Proceedings of the 8th Innovations in Theoretical Computer Science Conference ({ITCS}~'2017)}}
 @String { JCB           = {Journal of Computational Biology} }
 @String { JCC           = {Computational Complexity}}
 @String { JCSS          = {Journal of Computer and System Sciences} }
@@ -40,8 +42,9 @@
 @String { NIPS2008      = {Proceedings of Advances in Neural Information Processing Systems~21 ({NIPS}~'2008)} }
 @String { NIPS2011      = {Proceedings of Advances in Neural Information Processing Systems~24 ({NIPS}~'2011)} }
 @String { NIPS2012      = {Proceedings of Advances in Neural Information Processing Systems~25 ({NIPS}~'2012)}}
-@String { NIPS2014      = {Proceedings of Advances in Neural Information Processing Systems~25 ({NIPS}~'2014)}}
+@String{NIPS2014      = {Proceedings of Advances in Neural Information Processing Systems~27 ({NIPS}~'2014)}}
 @String { NIPS2015      = {Proceedings of Advances in Neural Information Processing Systems~28 ({NIPS}~'2015)} }
+@String{NIPS2016      = {Proceedings of Advances in Neural Information Processing Systems~29 ({NIPS}~'2016)}}
 @String { PODS2015      = {Proceedings of the 34th {ACM} Symposium on Principles of Database Systems ({PODS}~'2015)} }
 @String { PODS2016      = {Proceedings of the 35th {ACM} Symposium on Principles of Database Systems ({PODS}~'2016)} }
 @String { SEQUENCES97   = {Proceedings of the Compression and Complexity of Sequences ({SEQUENCES}~'1997)} }
@@ -68,6 +71,7 @@
 @String { STOC2011      = {Proceedings of the 43rd {ACM} Symposium on the Theory of Computing ({STOC}~'2011)}}
 @String { STOC2015      = {Proceedings of the 47th {ACM} Symposium on the Theory of Computing ({STOC}~'2015)} }
 @String { STOC2016      = {Proceedings of the 48th {ACM} Symposium on the Theory of Computing ({STOC}~'2016)} }
+@String{STOC2017      = {Proceedings of the 49th {ACM} Symposium on the Theory of Computing ({STOC}~'2017)}}
 @String { TALG          = {{ACM} Transactions on Algorithms} }
 @String { TCS           = {Theoretical Computer Science} }
 @String { TIT           = {{IEEE} Transactions on Information Theory}}
@@ -135,11 +139,13 @@
   Pages                    = {451--460}
 }
 
-@Unpublished{AYS16,
-  Title                    = {{E}xploiting the {S}tructure: {S}tochastic {G}radient {M}ethods {U}sing {R}aw {C}lusters},
-  Author                   = {Zeyuan {Allen-Zhu} and Yang Yuan and Karthik Sridharan},
-  Note                     = {Available as arXiv:1602.02151},
-  Year                     = {2016}
+@InProceedings{AYS16,
+  author    = {Zeyuan {Allen-Zhu} and Yang Yuan and Karthik Sridharan},
+  title     = {{E}xploiting the {S}tructure: {S}tochastic {G}radient {M}ethods {U}sing {R}aw {C}lusters},
+  booktitle = NIPS2016,
+  year      = {2016},
+  pages     = {1642--1650},
+  note      = {Available as arXiv:1602.02151},
 }
 
 @InProceedings{ACW16,
@@ -341,11 +347,11 @@
 }
 
 @Book{BCKO08,
-  Title                    = {{C}omputational {G}eometry: {A}lgorithms and {A}pplications},
-  Author                   = {Mark de Berg and Otfried Cheong and Marc van Kreveld and Mark Overmars},
-  Publisher                = {Springer},
-  Year                     = {2008},
-  Edition                  = {third}
+  title     = {{C}omputational {G}eometry: {A}lgorithms and {A}pplications},
+  publisher = {Springer},
+  year      = {2008},
+  author    = {Mark de Berg and Otfried Cheong and Marc van Kreveld and Mark Overmars},
+  edition   = {Third},
 }
 
 @Misc{B13,
@@ -533,13 +539,13 @@
 }
 
 @Article{MJ05,
-  Title                    = {The Design and Implementation of {FFTW3}},
-  Author                   = {Matteo Frigo and Steven G. Johnson},
-  Journal                  = IEEEP,
-  Year                     = {2005},
-  Number                   = {2},
-  Pages                    = {216--231},
-  Volume                   = {93}
+  author  = {Matteo Frigo and Steven G. Johnson},
+  title   = {{T}he {D}esign and {I}mplementation of {FFTW3}},
+  journal = IEEEP,
+  year    = {2005},
+  volume  = {93},
+  number  = {2},
+  pages   = {216--231},
 }
 
 @InProceedings{GIM99,
@@ -691,11 +697,12 @@
   Volume                   = {40}
 }
 
-@Unpublished{KW16,
-  Title                    = {{F}ast {C}ross-{P}olytope {L}ocality-{S}ensitive {H}ashing},
-  Author                   = {Christopher Kennedy and Rachel Ward},
-  Note                     = {Available as arXiv:1602.06922},
-  Year                     = {2016}
+@InProceedings{KW16,
+  author    = {Christopher Kennedy and Rachel Ward},
+  title     = {{F}ast {C}ross-{P}olytope {L}ocality-{S}ensitive {H}ashing},
+  booktitle = ITCS2017,
+  year      = {2016},
+  note      = {Available as arXiv:1602.06922},
 }
 
 @InProceedings{KL04,
@@ -739,11 +746,11 @@
 }
 
 @Book{LRU14,
-  Title                    = {{M}ining of {M}assive {D}atasets},
-  Author                   = {Jure Lescovec and Anand Rajaraman and Jeffrey David Ullman},
-  Publisher                = {Cambridge University Press},
-  Year                     = {2014},
-  Edition                  = {second}
+  title     = {{M}ining of {M}assive {D}atasets},
+  publisher = {Cambridge University Press},
+  year      = {2014},
+  author    = {Jure Lescovec and Anand Rajaraman and Jeffrey David Ullman},
+  edition   = {Second},
 }
 
 @Article{LLR95,
@@ -1095,11 +1102,13 @@
   Volume                   = {6}
 }
 
-@Unpublished{Y16,
-  Title                    = {{S}imple {A}verage-{C}ase {L}ower {B}ounds for {A}pproximate {N}ear-{N}eighbor from {I}soperimetric {I}nequalities},
-  Author                   = {Yitong Yin},
-  Note                     = {Available as arXiv:1602.05391},
-  Year                     = {2016}
+@InProceedings{Y16,
+  author    = {Yitong Yin},
+  title     = {{S}imple {A}verage-{C}ase {L}ower {B}ounds for {A}pproximate {N}ear-{N}eighbor from {I}soperimetric {I}nequalities},
+  booktitle = ICALP2016,
+  year      = {2016},
+  pages     = {84:1--84:13},
+  note      = {Available as arXiv:1602.05391},
 }
 
 @Misc{T,
@@ -1156,11 +1165,12 @@
   author    = {Albert W. Marshall and Ingram Olkin and Barry C. Arnold},
 }
 
-@Unpublished{BCKY15,
-  author = {Vladimir Braverman and Stephen R. Chestnut and Robert Krauthgamer and Lin F. Yang},
-  title  = {{S}treaming {S}ymmetric {N}orms via {M}easure {C}oncentration},
-  note   = {Available as arXiv:1511.01111},
-  year   = {2015},
+@InProceedings{BCKY15,
+  author    = {Jaroslaw Blasiok and Vladimir Braverman and Stephen R. Chestnut and Robert Krauthgamer and Lin F. Yang},
+  title     = {{S}treaming {S}ymmetric {N}orms via {M}easure {C}oncentration},
+  booktitle = STOC2017,
+  year      = {2015},
+  note      = {Available as arXiv:1511.01111},
 }
 
 @InProceedings{I02,
@@ -1274,7 +1284,7 @@
   volume  = {37},
   number  = {6},
   pages   = {1247--1260},
-  month   = {June},
+  month   = jun,
 }
 
 @Article{L82,
@@ -1285,7 +1295,7 @@
   volume  = {28},
   number  = {2},
   pages   = {129--137},
-  month   = {March},
+  month   = mar,
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
