@@ -3,12 +3,15 @@
 
 @String { ACMCS         = {{ACM} Computing Surveys} }
 @String{ACTA             = {Acta Mathematica}}
+@String{AGMS             = {Analysis and Geometry in Metric Spaces}}
 @String{AIHP             = {Annales de l'institut Henri Poincar\'{e}}}
 @String{AISTATS2017      = {Proceedings of the 21st International Conference on Artificial Intelligence and Statistics ({AISTATS}~'2017)}}
 @String { ALGORITHMICA  = {Algorithmica} }
 @String{ANNALS           = {Annals of Mathematics}}
 @String { AOP           = {Annals of Probability}}
 @String{APPROXRANDOM2010 = {Approximation, Randomization, and Combinatorial Optimization. Algorithms and Techniques, 13th International Workshop, APPROX~'2010, and 14th International Workshop, RANDOM~'2010}}
+@String{APPROXRANDOM2016 = {Approximation, Randomization, and Combinatorial Optimization. Algorithms and Techniques, 19th International Workshop, APPROX~'2016, and 20th International Workshop, RANDOM~'2016}}
+@String{ARMATH           = {Archiv der Mathematik}}
 @String{BMCBI            = {BMC Bioinformatics}}
 @String{BULLAMS          = {Bulletin of the American Mathematical Society}}
 @String { CACM          = {Communications of the {ACM}} }
@@ -23,10 +26,12 @@
 @String { CRYPTO2015    = {Proceedings of the 35th International Cryptology Conference ({CRYPTO}~'2015)} }
 @String { CVPR2008      = {Proceedings of {IEEE} Computer Society Conference on Computer Vision and Pattern Recognition ({CVPR}~'2008)} }
 @String { DCG           = {Discrete and Computational Geometry} }
+@String{DUKEMJ           = {Duke Mathematical Journal}}
 @String{ECMLPKDD2012     = {Proceedings of the 2012 European conference on Machine Learning and Knowledge Discovery in Databases ({ECML}~{PKDD}~'2012)}}
 @String { EMNLP2014     = {Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing ({EMNLP}~'2014)} }
 @String { ESA2016       = {Proceedings of the 24th European Symposium Of Algorithms ({ESA}~'2016)} }
 @String { EUROCRYPT2015 = {Proceedings 34th Annual International Conference on the Theory and Applications of Cryptographic Techniques ({EUROCRYPT}~'2015)} }
+@String{FAA              = {Functional Analysis and Its Applications}}
 @String{FOCS1994         = {Proceedings of the 35th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'1994)}}
 @String{FOCS1999         = {Proceedings of the 40th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'1999)}}
 @String{FOCS2004         = {Proceedings of the 45th Annual {IEEE} Symposium on Foundations of Computer Science ({FOCS}~'2004)}}
@@ -75,6 +80,7 @@
 @String { NIPS2015      = {Proceedings of Advances in Neural Information Processing Systems~28 ({NIPS}~'2015)} }
 @String{NIPS2016      = {Proceedings of Advances in Neural Information Processing Systems~29 ({NIPS}~'2016)}}
 @String{PAMS             = {Proceedings of the American Mathematical Society}}
+@String{PIHES            = {Publications Math\'ematiques de l'IH\'ES}}
 @String { PODS2015      = {Proceedings of the 34th {ACM} Symposium on Principles of Database Systems ({PODS}~'2015)} }
 @String { PODS2016      = {Proceedings of the 35th {ACM} Symposium on Principles of Database Systems ({PODS}~'2016)} }
 @String{RIM           = {Results in Mathematics}}
@@ -98,6 +104,7 @@
 @String{SODA2015         = {Proceedings of the 26th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2015)}}
 @String { SODA2016      = {Proceedings of the 27th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2016)} }
 @String { SODA2017      = {Proceedings of the 28th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2017)} }
+@String{SODA2018         = {Proceedings of the 29th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2018)}}
 @String { SPAA2016      = {Proceedings of the 28th {ACM} Symposium on Parallelism in Algorithms and Architectures ({SPAA}~'2016)} }
 @String { STOC1995      = {Proceedings of the 27th {ACM} Symposium on the Theory of Computing ({STOC}~'1995)} }
 @String { STOC1998      = {Proceedings of the 30th {ACM} Symposium on the Theory of Computing ({STOC}~'1998)} }
@@ -686,6 +693,7 @@
   author    = {William Johnson and Joram Lindenstrauss},
   title     = {Extensions of {L}ipschitz mappings into a {H}ilbert space},
   booktitle = {Conference in modern analysis and probability ({N}ew {H}aven, {C}onnecticut, 1982)},
+  publisher = {American Mathematical Society},
   year      = {1984},
   volume    = {26},
   series    = {Contemporary Mathematics},
@@ -1140,14 +1148,14 @@
   Year                     = {2011}
 }
 
-@Book{Y12,
-  Title                    = {{L}ocally {D}ecodable {C}odes},
-  Author                   = {Sergey Yekhanin},
-  Publisher                = {Now Publishers},
-  Year                     = {2012},
-  Number                   = {3},
-  Series                   = {Foundations and Trends in Theoretical Computer Science},
-  Volume                   = {6}
+@Article{Y12,
+  author    = {Sergey Yekhanin},
+  title     = {{L}ocally {D}ecodable {C}odes},
+  journal   = {Foundations and Trends in Theoretical Computer Science},
+  year      = {2012},
+  volume    = {6},
+  number    = {3},
+  publisher = {Now Publishers},
 }
 
 @InProceedings{Y16,
@@ -1311,7 +1319,6 @@
   publisher = {Cambridge University Press},
   year      = {1991},
   author    = {Przemys\l{}aw Wojtaszczyk},
-  editor    = {B\'{e}la Bollob\'{a}s},
 }
 
 @Article{JDS11,
@@ -1849,9 +1856,9 @@
   journal   = {Foundations and Trends in Theoretical Computer Science},
   year      = {2014},
   volume    = {10},
+  number    = {1–2},
   pages     = {1--157},
-  issue     = {1–2},
-  publisher = {Now Publishers Inc},
+  publisher = {Now Publishers},
 }
 
 @InCollection{Z00,
@@ -2268,13 +2275,14 @@
   pages   = {1289--1306},
 }
 
-@Book{M05,
-  title     = {{D}ata {S}treams: {A}lgorithms and {A}pplications},
-  publisher = {Now Publishers},
-  year      = {2005},
+@Article{M05,
   author    = {S. Muthukrishnan},
+  title     = {{D}ata {S}treams: {A}lgorithms and {A}pplications},
+  journal   = {Foundations and Trends in Theoretical Computer Science},
+  year      = {2005},
   volume    = {1},
-  series    = {Foundations and Trends in Theoretical Computer Science},
+  number    = {1},
+  publisher = {Now Publishers},
 }
 
 @Article{GI10,
@@ -2320,6 +2328,169 @@
   year      = {1991},
   author    = {Walter Rudin},
   edition   = {2nd},
+}
+
+@InCollection{AI17,
+  author    = {Alexandr Andoni and Piotr Indyk},
+  title     = {{N}earest {N}eighbors in {H}igh-{D}imensional {S}paces},
+  booktitle = {Handbook of Discrete and Computational Geometry},
+  publisher = {CRC Press LLC},
+  year      = {2017},
+  editor    = {Jacob E. Goodman and Joseph O'Rourke and Csaba D. T\'{o}th},
+  pages     = {1133--1153},
+}
+
+@Book{H02,
+  title     = {Algebraic Topology},
+  publisher = {Cambridge University Press},
+  year      = {2002},
+  author    = {Allen Hatcher},
+}
+
+@Article{G81,
+  author  = {Efim D. Gluskin},
+  title   = {{D}iameter of the {M}inkowski {C}ompactum is {A}pproximately {E}qual to $n$},
+  journal = FAA,
+  year    = {1981},
+  volume  = {15},
+  number  = {1},
+  pages   = {57--58},
+}
+
+@InProceedings{LW16,
+  author    = {Yi Li and David P. Woodruff},
+  title     = {{O}n {A}pproximating {F}unctions of the {S}ingular {V}alues in a {S}tream},
+  booktitle = STOC2016,
+  year      = {2016},
+  pages     = {726--739},
+}
+
+@InProceedings{LW16a,
+  author    = {Yi Li and David P. Woodruff},
+  title     = {{T}ight {B}ounds for {S}ketching the {O}perator {N}orm, {S}chatten {N}orms, and {S}ubspace {E}mbeddings},
+  booktitle = APPROXRANDOM2016,
+  year      = {2016},
+  pages     = {39:1--39:11},
+}
+
+@InProceedings{NPS18,
+  author    = {Assaf Naor and Gilles Pisier and Gideon Schechtman},
+  title     = {{I}mpossibility of {D}imension {R}eduction in the {N}uclear {N}orm},
+  booktitle = SODA2018,
+  year      = {2018},
+}
+
+@Article{MN13,
+  author  = {Manor Mendel and Assaf Naor},
+  title   = {{S}pectral {C}alculus and {L}ipschitz {E}xtension for {B}arycentric {M}etric {S}paces},
+  journal = AGMS,
+  year    = {2013},
+  volume  = {1},
+  pages   = {163--199},
+}
+
+@Article{MN14,
+  author  = {Manor Mendel and Assaf Naor},
+  title   = {{N}onlinear {S}pectral {C}alculus and {S}uper-{E}xpanders},
+  journal = PIHES,
+  year    = {2014},
+  volume  = {119},
+  number  = {1},
+  pages   = {1--95},
+}
+
+@Article{MN15,
+  author  = {Manor Mendel and Assaf Naor},
+  title   = {{E}xpanders with {R}espect to {H}adamard {S}paces and {R}andom {G}raphs},
+  journal = DUKEMJ,
+  year    = {2015},
+  volume  = {164},
+  number  = {8},
+  pages   = {1471--1548},
+}
+
+@Article{N14a,
+  author  = {Assaf Naor},
+  title   = {{C}omparison of {M}etric {S}pectral {G}aps},
+  journal = AGMS,
+  year    = {2014},
+  volume  = {2},
+  pages   = {1--52},
+}
+
+@Article{R15,
+  author  = {\'Eric Ricard},
+  title   = {{H}\"{o}lder {E}stimates for the {N}oncommutative {M}azur {M}ap},
+  journal = ARMATH,
+  year    = {2015},
+  volume  = {104},
+  number  = {1},
+  pages   = {37--45},
+}
+
+@Article{AHK12,
+  author  = {Sanjeev Arora and Elad Hazan and Satyen Kale},
+  title   = {The {M}ultiplicative {W}eights {U}pdate {M}ethod: a {M}eta-{A}lgorithm and {A}pplications},
+  journal = TOC,
+  year    = {2012},
+  volume  = {8},
+  number  = {1},
+  pages   = {121--164},
+}
+
+@PhdThesis{R17,
+  author = {Ilya Razenshteyn},
+  title  = {{H}igh-{D}imensional {S}imilarity {S}earch and {S}ketching: {A}lgorithms and {H}ardness},
+  school = {Massachusetts Institute of Technology},
+  year   = {2017},
+}
+
+@Misc{S15,
+  author       = {Daniel A. Spielman},
+  title        = {{C}onductance, the {N}ormalized {L}aplacian, and {C}heeger's {I}nequality},
+  howpublished = {Lecture Notes},
+  year         = {2015},
+  url          = {http://www.cs.yale.edu/homes/spielman/561/lect06-15.pdf},
+}
+
+@Article{Y81,
+  author  = {Andrew Chi-Chih Yao},
+  title   = {Should Tables be Sorted?},
+  journal = JACM,
+  year    = {1981},
+  volume  = {28},
+  number  = {3},
+  pages   = {615--628},
+}
+
+@Unpublished{A10,
+  author = {Alexandr Andoni},
+  title  = {{N}earest {N}eighbor {S}earch in {H}igh-{D}imensional {S}paces},
+  note   = {Invited talk at the Workshop on Barriers in Computational Complexity II},
+  year   = {2010},
+  url    = {http://www.mit.edu/~andoni/nns-barriers.pdf},
+}
+
+@InCollection{C96,
+  author     = {Fan R. K. Chung},
+  title      = {{L}aplacians of {G}raphs and {C}heeger's {I}nequalities},
+  booktitle  = {Combinatorics, {P}aul {E}rd\H os is eighty, {V}ol.\ 2 ({K}eszthely, 1993)},
+  publisher  = {J\'anos Bolyai Math. Soc., Budapest},
+  year       = {1996},
+  volume     = {2},
+  series     = {Bolyai Soc. Math. Stud.},
+  pages      = {157--172},
+  mrclass    = {05C50 (58G99)},
+  mrnumber   = {1395858},
+  mrreviewer = {Slobodan Simi\'c},
+}
+
+@InProceedings{HR10,
+  author    = {Moritz Hardt and Guy N. Rothblum},
+  title     = {{A} {M}ultiplicative {W}eights {M}echanism for {P}rivacy-{P}reserving {D}ata {A}nalysis},
+  booktitle = FOCS2010,
+  year      = {2010},
+  pages     = {61--70},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
