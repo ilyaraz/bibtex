@@ -4,10 +4,12 @@
 @String { ACMCS         = {{ACM} Computing Surveys} }
 @String{ACTA             = {Acta Mathematica}}
 @String{AIHP             = {Annales de l'institut Henri Poincar\'{e}}}
+@String{AISTATS2017      = {Proceedings of the 21st International Conference on Artificial Intelligence and Statistics ({AISTATS}~'2017)}}
 @String { ALGORITHMICA  = {Algorithmica} }
 @String{ANNALS           = {Annals of Mathematics}}
 @String { AOP           = {Annals of Probability}}
 @String{APPROXRANDOM2010 = {Approximation, Randomization, and Combinatorial Optimization. Algorithms and Techniques, 13th International Workshop, APPROX~'2010, and 14th International Workshop, RANDOM~'2010}}
+@String{BMCBI            = {BMC Bioinformatics}}
 @String{BULLAMS          = {Bulletin of the American Mathematical Society}}
 @String { CACM          = {Communications of the {ACM}} }
 @String{CCC2009          = {Proceedings of the 24th Annual IEEE Conference on Computational Complexity ({CCC}~'2009)}}
@@ -64,6 +66,7 @@
 @String { JMLR          = {Journal of Machine Learning Research} }
 @String{KDD2008          = {Proceedings of the 14th ACM SIGKDD Conference on Knowledge Discovery and Data ({KDD}~'2008)}}
 @String{KDD2011          = {Proceedings of the 17th ACM SIGKDD Conference on Knowledge Discovery and Data ({KDD}~'2011)}}
+@String{KDD2017          = {Proceedings of the 23rd ACM SIGKDD Conference on Knowledge Discovery and Data ({KDD}~'2017)}}
 @String{MATHANN          = {Mathematische Annalen}}
 @String { NIPS2008      = {Proceedings of Advances in Neural Information Processing Systems~21 ({NIPS}~'2008)} }
 @String { NIPS2011      = {Proceedings of Advances in Neural Information Processing Systems~24 ({NIPS}~'2011)} }
@@ -83,6 +86,7 @@
 @String { SOCG2004      = {Proceedings of the 20th {ACM} Symposium on Computational Geometry ({SoCG}~'2004)} }
 @String { SOCG2015      = {Proceedings of the 31st International Symposium on Computational Geometry ({SoCG}~'2015)} }
 @String { SOCG2016      = {Proceedings of the 32nd International Symposium on Computational Geometry ({SoCG}~'2016)} }
+@String{SOCG2017         = {Proceedings of the 33rd International Symposium on Computational Geometry ({SoCG}~'2017)}}
 @String{SODA2000         = {Proceedings of the 11th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2000)}}
 @String { SODA2004      = {Proceedings of the 15th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2004)} }
 @String { SODA2006      = {Proceedings of the 17th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2006)} }
@@ -91,6 +95,7 @@
 @String{SODA2012         = {Proceedings of the 23rd {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2012)}}
 @String{SODA2013         = {Proceedings of the 24th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2013)}}
 @String { SODA2014      = {Proceedings of the 25th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2014)} }
+@String{SODA2015         = {Proceedings of the 26th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2015)}}
 @String { SODA2016      = {Proceedings of the 27th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2016)} }
 @String { SODA2017      = {Proceedings of the 28th {ACM-SIAM} Symposium on Discrete Algorithms ({SODA}~'2017)} }
 @String { SPAA2016      = {Proceedings of the 28th {ACM} Symposium on Parallelism in Algorithms and Architectures ({SPAA}~'2016)} }
@@ -99,6 +104,7 @@
 @String { STOC1999      = {Proceedings of the 31st {ACM} Symposium on the Theory of Computing ({STOC}~'1999)} }
 @String{STOC2000         = {Proceedings of the 32nd {ACM} Symposium on the Theory of Computing ({STOC}~'2000)}}
 @String { STOC2002      = {Proceedings of the 34th {ACM} Symposium on the Theory of Computing ({STOC}~'2002)} }
+@String{STOC2005         = {Proceedings of the 35th {ACM} Symposium on the Theory of Computing ({STOC}~'2005)}}
 @String { STOC2008      = {Proceedings of the 40th {ACM} Symposium on the Theory of Computing ({STOC}~'2008)} }
 @String { STOC2010      = {Proceedings of the 42rd {ACM} Symposium on the Theory of Computing ({STOC}~'2010)}}
 @String { STOC2011      = {Proceedings of the 43rd {ACM} Symposium on the Theory of Computing ({STOC}~'2011)}}
@@ -186,11 +192,11 @@
 }
 
 @InProceedings{ACW16,
-  Title                    = {{P}olynomial {R}epresentations of {T}hreshold {F}unctions with {A}pplications},
-  Author                   = {Josh Alman and Timothy M. Chan and Ryan Williams},
-  Booktitle                = FOCS2016,
-  Year                     = {2016},
-  Note                     = {To appear}
+  author    = {Josh Alman and Timothy M. Chan and Ryan Williams},
+  title     = {{P}olynomial {R}epresentations of {T}hreshold {F}unctions with {A}pplications},
+  booktitle = FOCS2016,
+  year      = {2016},
+  pages     = {467--476},
 }
 
 @PhdThesis{A09,
@@ -280,11 +286,12 @@
 }
 
 @InProceedings{ALRW16a,
-  Title                    = {{O}ptimal {H}ashing-based {T}ime--{S}pace {T}rade-offs for {A}pproximate {N}ear {N}eighbors},
-  Author                   = {Alexandr Andoni and Thijs Laarhoven and Ilya Razenshteyn and Erik Waingarten},
-  Booktitle                = SODA2017,
-  Year                     = {2017},
-  Note                     = {Available as arXiv:1608.03580}
+  author    = {Alexandr Andoni and Thijs Laarhoven and Ilya Razenshteyn and Erik Waingarten},
+  title     = {{O}ptimal {H}ashing-based {T}ime--{S}pace {T}rade-offs for {A}pproximate {N}ear {N}eighbors},
+  booktitle = SODA2017,
+  year      = {2017},
+  pages     = {47--66},
+  note      = {Available as arXiv:1608.03580},
 }
 
 @Unpublished{ALRW16,
@@ -313,10 +320,11 @@
 }
 
 @InProceedings{ARS16,
-  Title                    = {{LSH} {F}orest: {P}ractical {A}lgorithms {M}ade {T}heoretical},
-  Author                   = {Alexandr Andoni and Ilya Razenshteyn and Negev {Shekel Nosatzki}},
-  Booktitle                = SODA2017,
-  Year                     = {2017}
+  author    = {Alexandr Andoni and Ilya Razenshteyn and Negev {Shekel Nosatzki}},
+  title     = {{LSH} {F}orest: {P}ractical {A}lgorithms {M}ade {T}heoretical},
+  booktitle = SODA2017,
+  year      = {2017},
+  pages     = {67--78},
 }
 
 @InProceedings{BIRW16,
@@ -717,11 +725,11 @@
 }
 
 @InProceedings{KKKO16,
-  Title                    = {{E}xplicit {C}orrelation {A}mplifiers for {F}inding {O}utlier {C}orrelations in {D}eterministic {S}ubquadratic {T}ime},
-  Author                   = {Karppa, Matti and Kaski, Petteri and Kohonen, Jukka and {{\'O} Cath{\'a}in}, Padraig},
-  Booktitle                = ESA2016,
-  Year                     = {2016},
-  Note                     = {To appear}
+  author    = {Karppa, Matti and Kaski, Petteri and Kohonen, Jukka and {{\'O} Cath{\'a}in}, Padraig},
+  title     = {{E}xplicit {C}orrelation {A}mplifiers for {F}inding {O}utlier {C}orrelations in {D}eterministic {S}ubquadratic {T}ime},
+  booktitle = ESA2016,
+  year      = {2016},
+  pages     = {52:1--52:17},
 }
 
 @Article{KU11,
@@ -738,7 +746,8 @@
   author    = {Christopher Kennedy and Rachel Ward},
   title     = {{F}ast {C}ross-{P}olytope {L}ocality-{S}ensitive {H}ashing},
   booktitle = ITCS2017,
-  year      = {2016},
+  year      = {2017},
+  pages     = {53:1--53:16},
   note      = {Available as arXiv:1602.06922},
 }
 
@@ -1024,11 +1033,13 @@
   Pages                    = {1--8}
 }
 
-@Unpublished{SS16,
-  Title                    = {{S}calable and {S}ustainable {D}eep {L}earning via {R}andomized {H}ashing},
-  Author                   = {Ryan Spring and Anshumali Shrivastava},
-  Note                     = {Available as arXiv:1602.08194},
-  Year                     = {2016}
+@InProceedings{SS16,
+  author    = {Ryan Spring and Anshumali Shrivastava},
+  title     = {{S}calable and {S}ustainable {D}eep {L}earning via {R}andomized {H}ashing},
+  booktitle = KDD2017,
+  year      = {2017},
+  pages     = {445--454},
+  note      = {Available as arXiv:1602.08194},
 }
 
 @Article{S91,
@@ -1070,10 +1081,10 @@
 }
 
 @InProceedings{VKS09,
-  Title                    = {{W}hich {S}patial {P}artition {T}rees are {A}daptive to {I}ntrinsic {D}imension?},
-  Author                   = {Nakul Verma and Samory Kpotufe and Sanjoy},
-  Booktitle                = UAI2009,
-  Year                     = {2009}
+  author    = {Nakul Verma and Samory Kpotufe and Sanjoy Dasgupta},
+  title     = {{W}hich {S}patial {P}artition {T}rees are {A}daptive to {I}ntrinsic {D}imension?},
+  booktitle = UAI2009,
+  year      = {2009},
 }
 
 @InProceedings{WKC10,
@@ -1207,6 +1218,7 @@
   title     = {{S}treaming {S}ymmetric {N}orms via {M}easure {C}oncentration},
   booktitle = STOC2017,
   year      = {2017},
+  pages     = {716--729},
   note      = {Available as arXiv:1511.01111},
 }
 
@@ -1340,6 +1352,7 @@
   title     = {{A}pproximate {N}ear {N}eighbors for {G}eneral {S}ymmetric {N}orms},
   booktitle = STOC2017,
   year      = {2017},
+  pages     = {902--913},
   note      = {Available as arXiv:1611.06222},
 }
 
@@ -2110,6 +2123,203 @@
   booktitle = VLDB2013,
   year      = {2013},
   pages     = {1930--1941},
+}
+
+@Book{BS88,
+  title     = {{I}nterpolation of {O}perators},
+  publisher = {Academic Press},
+  year      = {1988},
+  author    = {Colin Bennett and Robert Sharpley},
+  volume    = {129},
+  series    = {Pure and Applied Mathematics},
+}
+
+@InProceedings{CW15,
+  author    = {Kenneth L. Clarkson and David P. Woodruff},
+  title     = {{S}ketching for {$M$}-{E}stimators: {A} {U}nified {A}pproach to {R}obust {R}egression},
+  booktitle = SODA2015,
+  year      = {2015},
+  pages     = {921--939},
+}
+
+@Article{C97,
+  author  = {Kenneth L. Clarkson},
+  title   = {Nearest Neighbor Queries in Metric Spaces},
+  journal = DCG,
+  year    = {1999},
+  volume  = {22},
+  number  = {1},
+  pages   = {63--93},
+}
+
+@InCollection{J48,
+  author    = {John, Fritz},
+  title     = {{E}xtremum {P}roblems with {I}nequalities as {S}ubsidiary {C}onditions},
+  booktitle = {Studies and {E}ssays {P}resented to {R}. {C}ourant on his 60th {B}irthday, {J}anuary 8, 1948},
+  publisher = {Interscience Publishers, Inc., New York, N. Y.},
+  year      = {1948},
+  pages     = {187--204},
+}
+
+@Article{M96,
+  author  = {Ji\v{r}\'{i} Matou\v{s}ek},
+  title   = {On the distortion required for embedding finite metric spaces into normed spaces},
+  journal = ISRAELJM,
+  year    = {1996},
+  volume  = {93},
+  pages   = {333--344},
+}
+
+@InProceedings{N17,
+  author    = {Assaf Naor},
+  title     = {A {S}pectral {G}ap {P}recludes {L}ow-{D}imensional {E}mbeddings},
+  booktitle = SOCG2017,
+  year      = {2017},
+  pages     = {50:1--50:16},
+  note      = {Available as arXiv:1611.08861},
+}
+
+@Unpublished{NR06,
+  author = {Assaf Naor and Yuval Rabani},
+  title  = {{O}n {A}pproximate {N}earest {N}eighbor {S}earch in $\ell_p$, $p > 2$},
+  note   = {Manuscript},
+  year   = {2006},
+}
+
+@InCollection{A16,
+  author    = {Alexandr Andoni},
+  title     = {High-Dimensional Computational Geometry},
+  booktitle = {Handbook of Big Data},
+  publisher = {Chapman \& Hall/CRC},
+  year      = {2016},
+  pages     = {105--123},
+}
+
+@Article{W05,
+  author  = {Ryan Williams},
+  title   = {A {N}ew {A}lgorithm for {O}ptimal 2-{C}onstraint {S}atisfaction and its {I}mplications},
+  journal = TCS,
+  year    = {2005},
+  volume  = {348},
+  number  = {2--3},
+  pages   = {357--365},
+}
+
+@Article{BC05,
+  author  = {Bo Brinkman and Moses Charikar},
+  title   = {On the {I}mpossibility of {D}imension {R}eduction in $\ell_1$},
+  journal = JACM,
+  year    = {2005},
+  volume  = {52},
+  number  = {5},
+  pages   = {766--788},
+}
+
+@Article{AMS99,
+  author  = {Noga Alon and Yossi Matias and Mario Szegedy},
+  title   = {The Space Complexity of Approximating the Frequency Moments},
+  journal = JCSS,
+  year    = {1999},
+  volume  = {58},
+  number  = {1},
+  pages   = {137--147},
+}
+
+@Article{KS92,
+  author  = {Bala Kalyanasundaram and Georg Schintger},
+  title   = {{T}he {P}robabilistic {C}ommunication {C}omplexity of {S}et {I}ntersection},
+  journal = SIDM,
+  year    = {1992},
+  volume  = {5},
+  number  = {4},
+  pages   = {545--557},
+}
+
+@InProceedings{IW05,
+  author    = {Piotr Indyk and David Woodruff},
+  title     = {{O}ptimal {A}pproximations of the {F}requency {M}oments of {D}ata {S}treams},
+  booktitle = STOC2005,
+  year      = {2005},
+  pages     = {202--208},
+}
+
+@InProceedings{AKO10,
+  author    = {Alexandr Andoni and Robert Krauthgamer and Krzysztof Onak},
+  title     = {Polylogarithmic approximation for edit distance and the asymmetric query complexity},
+  booktitle = FOCS2010,
+  year      = {2010},
+  pages     = {377--386},
+}
+
+@PhdThesis{N11,
+  author = {Jelani Nelson},
+  title  = {{S}ketching and {S}treaming {H}igh-{D}imensional {V}ectors},
+  school = {Massachusetts Institute of Technology},
+  year   = {2011},
+}
+
+@Article{D06,
+  author  = {David L. Donoho},
+  title   = {{C}ompressed {S}ensing},
+  journal = TIT,
+  year    = {2006},
+  volume  = {52},
+  number  = {4},
+  pages   = {1289--1306},
+}
+
+@Book{M05,
+  title     = {{D}ata {S}treams: {A}lgorithms and {A}pplications},
+  publisher = {Now Publishers},
+  year      = {2005},
+  author    = {S. Muthukrishnan},
+  volume    = {1},
+  series    = {Foundations and Trends in Theoretical Computer Science},
+}
+
+@Article{GI10,
+  author  = {Anna Gilbert and Piotr Indyk},
+  title   = {{S}parse {R}ecovery using {S}parse {M}atrices},
+  journal = IEEEP,
+  year    = {2010},
+  volume  = {98},
+  number  = {6},
+  pages   = {937--947},
+}
+
+@Article{KBGSW10,
+  author  = {Raghunandan M. Kainkaryam and Angela Bruex and Anna C. Gilbert and John Schiefelbein and Peter J. Woolf},
+  title   = {{PoolMC}: {S}mart {P}ooling of {mRNA} {S}amples in {M}icroarray {E}xperiments},
+  journal = BMCBI,
+  year    = {2010},
+  volume  = {11},
+  number  = {299},
+}
+
+@Article{CW79,
+  author  = {J. Lawrence Carter and Mark N. Wegman},
+  title   = {{U}niversal {C}lasses of {H}ash {F}unctions},
+  journal = JCSS,
+  year    = {1979},
+  volume  = {18},
+  number  = {2},
+  pages   = {143--154},
+}
+
+@InProceedings{BCCFGMSSA17,
+  author    = {Mariusz Bojarski and Anna Choromanska and Krzysztof Choromanski and Francois Fagan and Cedric Gouy-Pailler and Anne Morvan and Nourhan Sakr and Tamas Sarlos and Jamal Atif},
+  title     = {{S}tructured {A}daptive and {R}andom {S}pinners for {F}ast {M}achine {L}earning {C}omputations},
+  booktitle = AISTATS2017,
+  year      = {2017},
+  pages     = {1020--1029},
+}
+
+@Book{R91,
+  title     = {Functional Analysis},
+  publisher = {McGraw-Hill, Inc.},
+  year      = {1991},
+  author    = {Walter Rudin},
+  edition   = {2nd},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
